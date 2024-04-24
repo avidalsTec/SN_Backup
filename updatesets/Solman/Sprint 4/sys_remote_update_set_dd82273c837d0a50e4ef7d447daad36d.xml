@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-04-24 04:42:42">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Se cambia  condición de ejecución de BR para que solo se consuma el WS de Solman cuando se cierre el incidente
+We expect ServiceNow only calls this API when an incident is 'Resolved'. So please ask ServiceNow to check their business rule. It should be limited to when the status ' Resolved', not for other statuses.</description>
+<inserted/>
+<name>DVT-HU393-API REST SOLMAN-DIFG-V3</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>35a0365747f8ca10c62d01f4f16d438a</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:41</sys_created_on>
+<sys_id>dd82273c837d0a50e4ef7d447daad36d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:41</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_script_include_78d56a8047040250676de567436d43b9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.DVT_SolmanLibrary&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Library containing the necessary methods for the connection to solman.&lt;/description&gt;&lt;name&gt;DVT_SolmanLibrary&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var DVT_SolmanLibrary = Class.create();
+DVT_SolmanLibrary.prototype = {
+    initialize: function() {},
+
+    sendAlert: function(incNumber, incStatus, incComment, sapClient) {
+		var activeLog=gs.getProperty('solman.active.log');
+        var requestBody;
+        var responseBody;
+		var responseSolman='';
+        var status;
+        var sm;
+		var log='SOLMAN\n';
+        try {
+
+            sm = new sn_ws.RESTMessageV2("DVT- confirm the Solman alert", "zconfirm");
+            sm.setStringParameterNoEscape("incident", incNumber);
+			sm.setStringParameterNoEscape("status", incStatus);
+			sm.setStringParameterNoEscape("comment", incComment);
+			sm.setStringParameterNoEscape("sap-client", sapClient);
+            sm.setHttpTimeout(10000); //In milliseconds. Wait at most 10 seconds for response from http request.
+
+            response = sm.execute(); //Might throw exception if http connection timed out or some issue with sending request itself because of encryption/decryption of password.
+            //responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();
+			if(response.haveError()){
+				responseBody=response.getErrorMessage()+"\n"+ response.getBody();
+				responseSolman=responseBody;
+			}else{
+				responseBody= response.getBody();
+			}
+            status = response.getStatusCode();
+        } catch (ex) {            
+			responseBody = ex.getMessage();
+            status = '500';
+			responseSolman=responseBody;
+        } finally {
+            requestBody = sm ? sm.getRequestBody() : null;
+        }
+		log+='Request Body: ' + requestBody+'\n';
+		log+='Response: ' + responseBody+'\n';
+		log+='HTTP Status: ' + status+'\n';
+
+		if(activeLog=='true'){
+			gs.info(log);
+		}	
+
+		return responseSolman;	
+       
+    },
+
+    type: 'DVT_SolmanLibrary'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-25 16:46:23&lt;/sys_created_on&gt;&lt;sys_id&gt;78d56a8047040250676de567436d43b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;DVT_SolmanLibrary&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_78d56a8047040250676de567436d43b9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-03-05 03:39:49&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1038411564</payload_hash>
+<remote_update_set display_value="DVT-HU393-API REST SOLMAN-DIFG-V3">dd82273c837d0a50e4ef7d447daad36d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:41</sys_created_on>
+<sys_id>9582273c837d0a50e4ef7d447daad36e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a246f70000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:41</sys_updated_on>
+<table/>
+<target_name>DVT_SolmanLibrary</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>78a439fc88fcc2101096cfde2391dfd7</update_guid>
+<update_guid_history>78a439fc88fcc2101096cfde2391dfd7:1038411564,78947dbc4efcc210d0d09209adaf641f:-55260084,254ab83840f8c2108e26928274d11e71:1347994143,c0d4b7167ca486900c64398e16d8ce35:1923435639,4281af560124869097d6556f0eacb60c:104011643,ec9f1792c6248690f94562751b06535d:-1976188037,8df53a88484402504f2c6b04a2799bfb:-733477855,8d192e84c1040250016545be3113fdaa:1893017915</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_script_fc5466cc47c00250676de567436d43fe</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="incident"&gt;contact_type=integration^category=monitoreo^subcategoryINocc-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating^business_service.nameINInformática Power Center,SAP Basis,SAP DB,SAP ECC Tec Salud,SAP S/4 HANA,SAP HCM^stateCHANGESTO6^EQ&lt;item display_value="Integration" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="integration"/&gt;&lt;item display_value="Monitor" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="monitoreo"/&gt;&lt;item display_value="occ-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating" endquery="false" field="subcategory" goto="false" newquery="false" operator="IN" or="false" value="occ-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating"/&gt;&lt;item endquery="false" field="business_service.name" goto="false" newquery="false" operator="IN" or="false" value="Informática Power Center,SAP Basis,SAP DB,SAP ECC Tec Salud,SAP S/4 HANA,SAP HCM"/&gt;&lt;item display_value="Resolved" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="6"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;HBR-Solman Conecction&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var lib = new global.DVT_SolmanLibrary();
+	var comment=current.comments.getJournalEntry(1);
+	var sapClient=gs.getProperty('solman.sap.client');
+	//is state is Resolved or closed
+	if(current.state==6||current.state==7)
+	{
+		comment= current.close_notes;
+	}
+	var messageSolman=lib.sendAlert(current.number, current.state.getDisplayValue(), comment, sapClient);
+	if (messageSolman!=''){
+		current.work_notes=messageSolman;
+		current.update();
+	}
+	
+	
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-25 16:58:59&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fc5466cc47c00250676de567436d43fe&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;HBR-Solman Conecction&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_fc5466cc47c00250676de567436d43fe&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-03-04 23:24:55&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=fc5466cc47c00250676de567436d43fe"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;fc5466cc47c00250676de567436d43fe&lt;/documentkey&gt;&lt;fieldname&gt;message&lt;/fieldname&gt;&lt;language&gt;es&lt;/language&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-08 19:34:52&lt;/sys_created_on&gt;&lt;sys_id&gt;d5e517e0971c0a10655570700153af78&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-08 19:34:52&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_script&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;/record_update&gt;</payload>
+<payload_hash>629968160</payload_hash>
+<remote_update_set display_value="DVT-HU393-API REST SOLMAN-DIFG-V3">dd82273c837d0a50e4ef7d447daad36d</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:41</sys_created_on>
+<sys_id>d182273c837d0a50e4ef7d447daad36e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a246e90000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:41</sys_updated_on>
+<table>incident</table>
+<target_name>HBR-Solman Conecction</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>074a707840f8c210225518bb4c8a9ca4</update_guid>
+<update_guid_history>074a707840f8c210225518bb4c8a9ca4:629968160,1d6c3328abb4c210d9128b863c834d40:1924674774,6d13271a2a24869091bbfd15cdbbffb9:-1022767774,6d926f96b32486907f5fc32c781b5e5d:-1617870720,6d071b64031c0a1032b9097cf8e3268e:241608228,c4d69364881c0a1052d26362359e705f:-1826494221,15e517e0f21c0a102976374f32efc67a:-1270350581,53c57288064402503fb716eb990d93b5:835177560,4f55fe086f440250935ec2c97b58ce76:446532107,8914f6c4ff440250a9e3c4fd74ee783d:-2072757944,efbe2a8ca004025081b8621470dd435a:-408253561,025ea64c7b0402503f9c9b059314fb1a:-2014052687,aafd224c7f040250d218ebaf9715aafd:-274134197,cfedee0c4104025010e58b222356e9eb:-2014052687,edfb2e481f040250e32b711176a83761:-274134197</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

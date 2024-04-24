@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-04-24 04:42:45">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>"El administrador del sistema, puede tener la posibilidad de crear incidencias desde SOLMAN, para que pueda ser atendida dentro de ServiceNow por los grupos de atención según lo acordado. Que todos los cambios de estatus de la incidencia puedan ser reflejados de ServiceNow a SOLMAN.
+Datos que enviará SOLMAN a ServiceNow:
+- Usuario Afectado
+- Categoría
+- Descripción Corta
+- Descripción
+- Urgencia
+- Impacto
+- Tenant
+- Tipo
+
+Datos que enviará ServiceNow a SOLMAN
+- Número de Incidencia
+- Estatús
+
+Creación de script para consumir API de Solman
+Endpoint: https://devl012azms01.itesm.mx:44300/zconfirm?sap-client=001
+10.97.28.26
+Authentication: Basic authentication (user name and password to be provided)
+Method: POST
+Sample Payload:
+{"incident:": "INC00607271",                            è ServiceNow incident number
+ "status": "Resolved",                                          è status value should be Resolved
+ "comment": "Ticket Resolved"}                     è Free text</description>
+<inserted/>
+<name>HBR-HU393-API REST SOLMAN-DIFG-V1</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>8c8dee9b47b8ca10c62d01f4f16d43c5</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>5682e3f8837d0a50e4ef7d447daad379</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_d3eedc67473b7d10676de567436d43c9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message"><sys_rest_message action="INSERT_OR_UPDATE"><access>public</access><authentication_type>no_authentication</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><description>When an incident is resolved, ServiceNow should call this API to confirm the Solman alert. </description><name>DVT- confirm the Solman alert</name><oauth2_profile/><protocol_name/><rest_endpoint>https://devl012azms01.itesm.mx:44300/zconfirm?sap-client=001</rest_endpoint><sys_class_name>sys_rest_message</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:27:38</sys_created_on><sys_id>d3eedc67473b7d10676de567436d43c9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DVT- confirm the Solman alert</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_d3eedc67473b7d10676de567436d43c9</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-01-23 17:27:38</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mutual_auth>false</use_mutual_auth></sys_rest_message></record_update>]]></payload>
+<payload_hash>1394413240</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>1282e73c837d0a50e4ef7d447daad3bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a8f10000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>DVT- confirm the Solman alert</target_name>
+<type>REST Message</type>
+<update_domain>global</update_domain>
+<update_guid>395fd8a7dc3b7d1002b62bac92c95027</update_guid>
+<update_guid_history>395fd8a7dc3b7d1002b62bac92c95027:1394413240</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_dictionary_cmdb_name</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="name" table="cmdb"><active>true</active><array>false</array><attributes>edge_encryption_enabled=true,synchronizePartitions=true</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Name</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>true</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>name</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>true</mandatory><max_length>255</max_length><name>cmdb</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:06:12</sys_created_on><sys_id>4a1f5adb47101110648cd706536d43cc</sys_id><sys_name>Name</sys_name><sys_package display_value="Configuration Management (CMDB)" source="com.snc.cmdb">1d1f1adb47101110648cd706536d4370</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_cmdb_name</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-06 17:20:29</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>-873914999</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>1682e73c837d0a50e4ef7d447daad3be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9370000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>cmdb</table>
+<target_name>Base Configuration Item.Name</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>5624ec88ded40610c928e0dc49b041c2</update_guid>
+<update_guid_history>5624ec88ded40610c928e0dc49b041c2:-873914999,17906b5ae47c395099f6ef8aa87a2a8c:1311742538,f5b63bbd4b596dd01c82f740d068c845:-1070080540,ce96373d00596dd02b8d4e93b2196ab0:437270819,aa94ee2c536a6950f44d37ddabaf99c9:1311742538,40742aa8b26a6950c51637d7afd2d1fd:1828001676,b888511d18b661103ba5a3235cf27b32:1311742538,f2789d996ab66110796ecabca898eb97:1828001676</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_ui_related_sys_auth_profile_basic_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="sys_auth_profile_basic" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Configuración de autentificación básica - Default view" name="sys_auth_profile_basic" related_list="NULL" sys_domain="global" view="Default view">9095d7a0971c0a10655570700153af4c</list_id><order_by/><position>0</position><related_list>REL:67bdac52374010008687ddb1967334ee</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-08 19:33:26</sys_created_on><sys_id>5c95d7a0971c0a10655570700153af4c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-08 19:33:26</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Configuración de autentificación básica - Default view</calculated_name><filter/><name>sys_auth_profile_basic</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-08 19:33:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9095d7a0971c0a10655570700153af4c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Configuración de autentificación básica - Default view</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_related_sys_auth_profile_basic_null</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-08 19:33:26</sys_updated_on><sys_user/><view display_value="Vista predeterminada" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+<payload_hash>-1847463990</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>1682e73c837d0a50e4ef7d447daad3c1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a98c0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>sys_auth_profile_basic</table>
+<target_name>Basic Auth Configuration</target_name>
+<type>Related Lists</type>
+<update_domain>global</update_domain>
+<update_guid>9095d7a0881c0a101109b419a1ec444e</update_guid>
+<update_guid_history>9095d7a0881c0a101109b419a1ec444e:-1847463990,7c55d3a0861c0a10d2c6158509dd9673:-1718292249</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sysrule_assignment_e989204447180610676de567436d43fb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment"><sysrule_assignment action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">contact_type=integration^category=monitoreo^subcategory=occ-base de datos^business_service=cf4c5c8847940610676de567436d4371^EQ<item display_value="Integration" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="integration"/><item display_value="Monitor" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="monitoreo"/><item display_value="OCC-Base de Datos" endquery="false" field="subcategory" goto="false" newquery="false" operator="=" or="false" value="occ-base de datos"/><item display_table="cmdb_ci_service" display_value="SAP DB" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="false" value="cf4c5c8847940610676de567436d4371"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><group display_value="CSC TI.SAPBD-OCC" name="CSC TI.SAPBD-OCC">3fc933229788c650655570700153afbe</group><match_conditions>ALL</match_conditions><name>HBR- SOLMAN SAP DB</name><order>400</order><script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script><sys_class_name>sysrule_assignment</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-06 17:45:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e989204447180610676de567436d43fb</sys_id><sys_mod_count>2</sys_mod_count><sys_name>HBR- SOLMAN SAP DB</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sysrule_assignment_e989204447180610676de567436d43fb</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 18:15:16</sys_updated_on><table>incident</table><user/></sysrule_assignment></record_update>]]></payload>
+<payload_hash>-293085903</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>1a82e3f8837d0a50e4ef7d447daad37a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9650000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>HBR- SOLMAN SAP DB</target_name>
+<type>Assignment Rule</type>
+<update_domain>global</update_domain>
+<update_guid>ad1a3990799c86101c03e0eb086a7778</update_guid>
+<update_guid_history>ad1a3990799c86101c03e0eb086a7778:-293085903,5ad9f5906c9c8610df849a790f3d93c2:375013629,d9c9e8047e18061071bb4603734449e5:-338645094</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_choice_incident_contact_type</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="contact_type" table="incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>contact_type</element><name>incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-04 12:15:14</sys_created_on><sys_id>71c6987077033010949878dabd5a9946</sys_id><sys_mod_count>0</sys_mod_count><sys_name>contact_type</sys_name><sys_package display_value="Incident" source="com.snc.incident">8b112ad347901110676de567436d4305</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_choice_incident_contact_type</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-04 12:15:14</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Chat</label><language>en</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-04 12:15:14</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>1286187077033010949878dabd5a99e5</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:47:27</sys_updated_on><value>chat</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Chat</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a5769eaa47955110676de567436d43bd</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:53</sys_updated_on><value>chat</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Correo electrónico</label><language>es</language><name>incident</name><sequence>1</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>25769eaa47955110676de567436d43c6</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:55:28</sys_updated_on><value>email</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Email</label><language>en</language><name>incident</name><sequence>1</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-04 12:16:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>5427987077033010949878dabd5a99a9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-04 12:16:46</sys_updated_on><value>email</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Phone</label><language>en</language><name>incident</name><sequence>2</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-04 12:16:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>9c271cf077033010949878dabd5a9971</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-04 12:16:46</sys_updated_on><value>phone</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Teléfono</label><language>es</language><name>incident</name><sequence>2</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>ed769eaa47955110676de567436d43b8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:53</sys_updated_on><value>phone</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>true</inactive><label>Monitoring</label><language>en</language><name>incident</name><sequence>3</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-04 12:18:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>4587503477033010949878dabd5a990e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-04 12:18:28</sys_updated_on><value>monitoring</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Supervisión</label><language>es</language><name>incident</name><sequence>3</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e9769eaa47955110676de567436d43ca</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:53</sys_updated_on><value>monitoring</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Self Service</label><language>es</language><name>incident</name><sequence>4</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>69769eaa47955110676de567436d43d3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:53</sys_updated_on><value>self-service</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Self-service</label><language>en</language><name>incident</name><sequence>4</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-04 12:16:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>d0271cf077033010949878dabd5a9975</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-10-04 12:18:28</sys_updated_on><value>self-service</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Virtual Agent</label><language>en</language><name>incident</name><sequence>5</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-04 12:18:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>4d87503477033010949878dabd5a9914</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:36:40</sys_updated_on><value>virtual_agent</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Virtual Agent</label><language>es</language><name>incident</name><sequence>5</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a1769eaa47955110676de567436d43cf</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:53</sys_updated_on><value>virtual_agent</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>In situ</label><language>es</language><name>incident</name><sequence>6</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6d769eaa47955110676de567436d43c1</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:53</sys_updated_on><value>walk-in</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Walk-in</label><language>en</language><name>incident</name><sequence>6</sequence><synonyms/><sys_created_by>admin</sys_created_by><sys_created_on>2021-10-04 12:16:46</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>18271cf077033010949878dabd5a9978</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:50:10</sys_updated_on><value>walk-in</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Integración</label><language>es</language><name>incident</name><sequence>1000</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-01 01:59:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>e031efc297880650655570700153af2b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-01 01:59:26</sys_updated_on><value>integration</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>contact_type</element><hint/><inactive>false</inactive><label>Integration</label><language>en</language><name>incident</name><sequence>1000</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-01 01:59:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6601eb4a97880650655570700153affa</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-01 01:59:12</sys_updated_on><value>integration</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>1290532267</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>1a82e73c837d0a50e4ef7d447daad3bd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9240000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Channel</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>a831238a8188065097eff4bc1e35ac0c</update_guid>
+<update_guid_history>a831238a8188065097eff4bc1e35ac0c:1290532267,5121ef4a4088065053aaec1acc725d09:1993827710,29c6bfe5a6b57510997009600ea9356a:1470648671,cc957fed66757510af61df331904a514:-820336902,dcf4372d3e757510c53321dc08c84056:1166465769,de20ffa1be35751064c41e6defb406d8:-631955984,70de67a9f4f17510992bffa2d94d2c0f:-200151619,1d2e2ba57ff17510ba9e3166b5c61674:-235802970,192e2ba5d3f1751023e5f6b2028e7767:1470648671</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_f2ff98e7473b7d10676de567436d4318</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>comment</name><rest_message_function display_value="zconfirm">797fd8a7473b7d10676de567436d432e</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:30:35</sys_created_on><sys_id>f2ff98e7473b7d10676de567436d4318</sys_id><sys_mod_count>0</sys_mod_count><sys_name>comment</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_f2ff98e7473b7d10676de567436d4318</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-01-23 17:30:35</sys_updated_on><type>string</type><value>Ticket Resolved</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>1255219255</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>1a82e73c837d0a50e4ef7d447daad3c0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9020000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>comment</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>c500e8e7003b7d1077f92a9ffa4238f8</update_guid>
+<update_guid_history>c500e8e7003b7d1077f92a9ffa4238f8:1255219255</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sysrule_assignment_50f760c047180610676de567436d43f1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment"><sysrule_assignment action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">contact_type=integration^category=monitoreo^subcategoryINocc-aplicacion,occ-Integracion,occ-rendimiento^business_service=711cd0c847940610676de567436d437c^EQ<item display_value="Integration" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="integration"/><item display_value="Monitor" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="monitoreo"/><item display_value="occ-aplicacion,occ-Integracion,occ-rendimiento" endquery="false" field="subcategory" goto="false" newquery="false" operator="IN" or="false" value="occ-aplicacion,occ-Integracion,occ-rendimiento"/><item display_table="cmdb_ci_service" display_value="SAP Basis" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="false" value="711cd0c847940610676de567436d437c"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><group display_value="CSC TI.SAPBASIS-OCC" name="CSC TI.SAPBASIS-OCC">b0a9fbee9748c650655570700153afd9</group><match_conditions>ALL</match_conditions><name>HBR- SOLMAN SAP Basis</name><order>600</order><script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script><sys_class_name>sysrule_assignment</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-06 17:42:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>50f760c047180610676de567436d43f1</sys_id><sys_mod_count>3</sys_mod_count><sys_name>HBR- SOLMAN SAP Basis</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sysrule_assignment_50f760c047180610676de567436d43f1</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 18:15:02</sys_updated_on><table>incident</table><user/></sysrule_assignment></record_update>]]></payload>
+<payload_hash>1363477855</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>1e82e3f8837d0a50e4ef7d447daad379</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a95c0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>HBR- SOLMAN SAP Basis</target_name>
+<type>Assignment Rule</type>
+<update_domain>global</update_domain>
+<update_guid>520a7590569c86107ed144b2bd63e330</update_guid>
+<update_guid_history>520a7590569c86107ed144b2bd63e330:1363477855,e7d93990e59c8610d587947e5a653eb8:-2142645205,db2920c0171806103eeb38d84badb1cc:-1879307536,ba0920c0281806101ec14f58ea379d05:542147760</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_fn_headers_4690e42b473b7d10676de567436d4381</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Content-Type</name><rest_message_function display_value="zconfirm">797fd8a7473b7d10676de567436d432e</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:33:32</sys_created_on><sys_id>4690e42b473b7d10676de567436d4381</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Content-Type</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_headers_4690e42b473b7d10676de567436d4381</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-01-23 17:33:32</sys_updated_on><value>application/json</value></sys_rest_message_fn_headers></record_update>]]></payload>
+<payload_hash>1595152538</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>1e82e73c837d0a50e4ef7d447daad3bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9080000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>Content-Type</target_name>
+<type>HTTP Headers</type>
+<update_domain>global</update_domain>
+<update_guid>00b0a02b493b7d102ab49ad5272a43fd</update_guid>
+<update_guid_history>00b0a02b493b7d102ab49ad5272a43fd:1595152538</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_dictionary_cmdb_ci_comments</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_dictionary action="INSERT_OR_UPDATE" element="comments" table="cmdb_ci"><active>true</active><array>false</array><attributes>edge_encryption_enabled=true</attributes><audit>false</audit><calculation/><choice/><choice_field/><choice_table/><column_label>Comments</column_label><comments/><create_roles/><default_value/><defaultsort/><delete_roles/><dependent/><dependent_on_field/><display>false</display><dynamic_creation>false</dynamic_creation><dynamic_creation_script/><dynamic_default_value/><dynamic_ref_qual/><element>comments</element><element_reference>false</element_reference><foreign_database/><formula/><function_definition/><function_field>false</function_field><internal_type display_value="String">string</internal_type><mandatory>false</mandatory><max_length>4000</max_length><name>cmdb_ci</name><next_element/><primary>false</primary><read_only>false</read_only><read_roles/><reference/><reference_cascade_rule/><reference_floats>false</reference_floats><reference_key/><reference_qual/><reference_qual_condition/><reference_type/><spell_check>false</spell_check><staged>false</staged><sys_class_name>sys_dictionary</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:06:12</sys_created_on><sys_id>9a1f9adb47101110648cd706536d4343</sys_id><sys_name>Comments</sys_name><sys_package display_value="Configuration Management (CMDB)" source="com.snc.cmdb">1d1f1adb47101110648cd706536d4370</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_cmdb_ci_comments</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-06 17:24:59</sys_updated_on><table_reference>false</table_reference><text_index>false</text_index><unique>false</unique><use_dependent_field>false</use_dependent_field><use_dynamic_default>false</use_dynamic_default><use_reference_qualifier>simple</use_reference_qualifier><virtual>false</virtual><virtual_type>script</virtual_type><widget/><write_roles/><xml_view>false</xml_view></sys_dictionary></record_update>]]></payload>
+<payload_hash>1398165637</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>5282e73c837d0a50e4ef7d447daad3be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9400000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>cmdb_ci</table>
+<target_name>Configuration Item.Comments</target_name>
+<type>Dictionary</type>
+<update_domain>global</update_domain>
+<update_guid>5625a0ccc1d4061069c5f7e788978ea5</update_guid>
+<update_guid_history>5625a0ccc1d4061069c5f7e788978ea5:1398165637,8a92a98efe62f150d366f301be894ecc:910734258,d1f05e0b47927110d69efa7618522a8e:-1701746004,8400568331927110142248e00a91a840:1398165637,b26e8e8be6527110f2c32f797e064022:-1701746004,323e46c771527110e0dd971aa474fadc:910734258,44778e53b42eb510ba7a95ec9396957d:910734258</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_script_include_78d56a8047040250676de567436d43b9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.DVT_SolmanLibrary&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Library containing the necessary methods for the connection to solman.&lt;/description&gt;&lt;name&gt;DVT_SolmanLibrary&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var DVT_SolmanLibrary = Class.create();
+DVT_SolmanLibrary.prototype = {
+    initialize: function() {},
+
+    sendAlert: function(incNumber, incStatus, incComment, sapClient) {
+        var requestBody;
+        var responseBody;
+        var status;
+        var sm;
+		var log='DVT\n';
+        try {
+
+            sm = new sn_ws.RESTMessageV2("DVT- confirm the Solman alert", "zconfirm");
+            sm.setStringParameterNoEscape("incident", incNumber);
+			sm.setStringParameterNoEscape("status", incStatus);
+			sm.setStringParameterNoEscape("comment", incComment);
+			sm.setStringParameterNoEscape("sap-client", sapClient);
+            sm.setHttpTimeout(10000); //In milliseconds. Wait at most 10 seconds for response from http request.
+
+            response = sm.execute(); //Might throw exception if http connection timed out or some issue with sending request itself because of encryption/decryption of password.
+            responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();
+            status = response.getStatusCode();
+        } catch (ex) {
+            responseBody = ex.getMessage();
+            status = '500';
+        } finally {
+            requestBody = sm ? sm.getRequestBody() : null;
+        }
+		log+='Request Body: ' + requestBody+'\n';
+		log+='Response: ' + responseBody+'\n';
+		log+='HTTP Status: ' + status+'\n';
+
+		gs.info(log);
+       
+    },
+
+    type: 'DVT_SolmanLibrary'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-25 16:46:23&lt;/sys_created_on&gt;&lt;sys_id&gt;78d56a8047040250676de567436d43b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;DVT_SolmanLibrary&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_78d56a8047040250676de567436d43b9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-01-25 17:42:39&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-733477855</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>5282e73c837d0a50e4ef7d447daad3c1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a91d0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>DVT_SolmanLibrary</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>8df53a88484402504f2c6b04a2799bfb</update_guid>
+<update_guid_history>8df53a88484402504f2c6b04a2799bfb:-733477855,8d192e84c1040250016545be3113fdaa:1893017915</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sysrule_assignment_a2c9e80447180610676de567436d43e8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment"><sysrule_assignment action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">contact_type=integration^category=monitoreo^subcategory=occ-jobs_tecsalud^business_service=406c18c847940610676de567436d438f^EQ<item display_value="Integration" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="integration"/><item display_value="Monitor" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="monitoreo"/><item display_value="OCC-Jobs_TecSalud" endquery="false" field="subcategory" goto="false" newquery="false" operator="=" or="false" value="occ-jobs_tecsalud"/><item display_table="cmdb_ci_service" display_value="SAP ECC Tec Salud" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="false" value="406c18c847940610676de567436d438f"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><group display_value="CSC TI.SAPTecSalud-OCC" name="CSC TI.SAPTecSalud-OCC">8fd9bbee9748c650655570700153afea</group><match_conditions>ALL</match_conditions><name>HBR- SOLMAN SAP ECC Tec Salud</name><order>300</order><script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script><sys_class_name>sysrule_assignment</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-06 17:46:55</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a2c9e80447180610676de567436d43e8</sys_id><sys_mod_count>2</sys_mod_count><sys_name>HBR- SOLMAN SAP ECC Tec Salud</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sysrule_assignment_a2c9e80447180610676de567436d43e8</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 18:15:22</sys_updated_on><table>incident</table><user/></sysrule_assignment></record_update>]]></payload>
+<payload_hash>-664951468</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>5682e3f8837d0a50e4ef7d447daad37a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a96b0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>HBR- SOLMAN SAP ECC Tec Salud</target_name>
+<type>Assignment Rule</type>
+<update_domain>global</update_domain>
+<update_guid>831a3d90019c86104641902681b4fd19</update_guid>
+<update_guid_history>831a3d90019c86104641902681b4fd19:-664951468,71d9b190be9c861000a8ee9719a717a4:-1631268728,600a2c442d18061044c8164b9e16db65:1200516458</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_ec11a06b473b7d10676de567436d4379</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>sap-client</name><rest_message_function display_value="zconfirm">797fd8a7473b7d10676de567436d432e</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:35:17</sys_created_on><sys_id>ec11a06b473b7d10676de567436d4379</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sap-client</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_ec11a06b473b7d10676de567436d4379</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-01-23 17:35:17</sys_updated_on><type>string</type><value>001</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-695911702</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>5682e73c837d0a50e4ef7d447daad3c0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9120000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>sap-client</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>3111e46b353b7d10c4621c14e66918e4</update_guid>
+<update_guid_history>3111e46b353b7d10c4621c14e66918e4:-695911702</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sysrule_assignment_2d0a2c4447180610676de567436d43e1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment"><sysrule_assignment action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">contact_type=integration^category=monitoreo^subcategory=occ-jobs_finanzas^business_service=b57c50c847940610676de567436d436e^EQ<item display_value="Integration" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="integration"/><item display_value="Monitor" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="monitoreo"/><item display_value="OCC-Jobs_Finanzas" endquery="false" field="subcategory" goto="false" newquery="false" operator="=" or="false" value="occ-jobs_finanzas"/><item display_table="cmdb_ci_service" display_value="SAP S/4 HANA" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="false" value="b57c50c847940610676de567436d436e"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><group display_value="WG-N2T-COU-COU-0001" name="WG-N2T-COU-COU-0001">cac9ffee9748c650655570700153afee</group><match_conditions>ALL</match_conditions><name>HBR- SOLMAN SAP S/4 HANA</name><order>200</order><script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script><sys_class_name>sysrule_assignment</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-06 17:50:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2d0a2c4447180610676de567436d43e1</sys_id><sys_mod_count>2</sys_mod_count><sys_name>HBR- SOLMAN SAP S/4 HANA</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sysrule_assignment_2d0a2c4447180610676de567436d43e1</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 18:15:28</sys_updated_on><table>incident</table><user/></sysrule_assignment></record_update>]]></payload>
+<payload_hash>1745029775</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>5a82e3f8837d0a50e4ef7d447daad379</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a96f0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>HBR- SOLMAN SAP S/4 HANA</target_name>
+<type>Assignment Rule</type>
+<update_domain>global</update_domain>
+<update_guid>ec2ab9906a9c8610b044ae64ac672183</update_guid>
+<update_guid_history>ec2ab9906a9c8610b044ae64ac672183:1745029775,51d9b590129c86101e8ad58134c7016b:-2136369189,24ea6044f7180610db40276c899e53e3:385205946</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_fn_headers_0390642b473b7d10676de567436d43d5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Accept</name><rest_message_function display_value="zconfirm">797fd8a7473b7d10676de567436d432e</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:33:32</sys_created_on><sys_id>0390642b473b7d10676de567436d43d5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Accept</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_headers_0390642b473b7d10676de567436d43d5</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-01-23 17:33:32</sys_updated_on><value>*/*</value></sys_rest_message_fn_headers></record_update>]]></payload>
+<payload_hash>1489871112</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>5a82e73c837d0a50e4ef7d447daad3bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a90c0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>Accept</target_name>
+<type>HTTP Headers</type>
+<update_domain>global</update_domain>
+<update_guid>c0b0e82bd73b7d1092e55e6c50091dfc</update_guid>
+<update_guid_history>c0b0e82bd73b7d1092e55e6c50091dfc:1489871112</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_properties_fab070c3c3122200eeed99c8d1d3ae09</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Verify hostname and certificate chain presented by remote SSL hosts. Set to true to protect against MITM attacks. Overrides the com.glide.communications.trustmanager_trust_all property</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>com.glide.communications.httpclient.verify_hostname</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-10-10 17:28:29</sys_created_on><sys_id>fab070c3c3122200eeed99c8d1d3ae09</sys_id><sys_mod_count>2</sys_mod_count><sys_name>com.glide.communications.httpclient.verify_hostname</sys_name><sys_package display_value="High Security Settings" source="com.glide.high_security">6bb1ee1b47901110676de567436d4347</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_fab070c3c3122200eeed99c8d1d3ae09</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-09 17:18:59</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=fab070c3c3122200eeed99c8d1d3ae09"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="com.glide.communications.httpclient.verify_hostname" tablename="sys_properties">fab070c3c3122200eeed99c8d1d3ae09</documentkey><fieldname>description</fieldname><language>es</language><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 03:02:09</sys_created_on><sys_id>e228be2e47dd9110676de567436d4381</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 03:02:09</sys_updated_on><tablename>sys_properties</tablename><value>Compruebe la cadena de certificado y nombre de host presentada por hosts SSL remotos. El valor se define como Verdadero para protegerlo contra los ataques MITM. Anula la propiedad com.glide.communications.trustmanager_trust_all</value></sys_translated_text></record_update>]]></payload>
+<payload_hash>698257371</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>5e82e73c837d0a50e4ef7d447daad3be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9990000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>com.glide.communications.httpclient.verify_hostname</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>386044c1bf948a102ff8b2041c5c924e</update_guid>
+<update_guid_history>386044c1bf948a102ff8b2041c5c924e:698257371,3a104881a2948a101f973cb24abd8fc4:766783958,22108c41ab948a1042202d99e44bc82c:-1060316662</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sysrule_assignment_8039280447180610676de567436d4326</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment"><sysrule_assignment action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">contact_type=integration^category=monitoreo^subcategoryINocc-wf_ipc_failed,occ-wf_ipc_rating^business_service=9ecb9c8847940610676de567436d4329^EQ<item display_value="Integration" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="integration"/><item display_value="Monitor" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="monitoreo"/><item display_value="occ-wf_ipc_failed,occ-wf_ipc_rating" endquery="false" field="subcategory" goto="false" newquery="false" operator="IN" or="false" value="occ-wf_ipc_failed,occ-wf_ipc_rating"/><item display_table="cmdb_ci_service" display_value="Informática Power Center" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="false" value="9ecb9c8847940610676de567436d4329"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><group display_value="CSC TI.IPC-OCC" name="CSC TI.IPC-OCC">c6b9bfae9748c650655570700153aff4</group><match_conditions>ALL</match_conditions><name>HBR- SOLMAN Inf Power Center</name><order>500</order><script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script><sys_class_name>sysrule_assignment</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-06 17:44:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8039280447180610676de567436d4326</sys_id><sys_mod_count>2</sys_mod_count><sys_name>HBR- SOLMAN Inf Power Center</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sysrule_assignment_8039280447180610676de567436d4326</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 18:15:09</sys_updated_on><table>incident</table><user/></sysrule_assignment></record_update>]]></payload>
+<payload_hash>-369813708</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>9282e3f8837d0a50e4ef7d447daad37a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9600000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>HBR- SOLMAN Inf Power Center</target_name>
+<type>Assignment Rule</type>
+<update_domain>global</update_domain>
+<update_guid>cc1a3990ea9c8610333ea0829dca2a73</update_guid>
+<update_guid_history>cc1a3990ea9c8610333ea0829dca2a73:-369813708,fed9b190559c8610b0165cb7f9500ecf:183836820,197960440c1806102e7e4aca0ff289da:296878768</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_51dfd4e7473b7d10676de567436d43cd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>incident</name><rest_message_function display_value="zconfirm">797fd8a7473b7d10676de567436d432e</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:30:07</sys_created_on><sys_id>51dfd4e7473b7d10676de567436d43cd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_51dfd4e7473b7d10676de567436d43cd</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-01-23 17:30:07</sys_updated_on><type>string</type><value>INC00607271</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-1932115546</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>9282e73c837d0a50e4ef7d447daad3c0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a8f60000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>incident</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>c2ef50e7353b7d10aaddf3911ff797a4</update_guid>
+<update_guid_history>c2ef50e7353b7d10aaddf3911ff797a4:-1932115546</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_fn_b55fd8a7473b7d10676de567436d4323</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>DVT- confirm the Solman alert [ Default GET ]</qualified_name><rest_endpoint>https://devl012azms01.itesm.mx:44300/zconfirm?sap-client=001</rest_endpoint><rest_message display_value="DVT- confirm the Solman alert">d3eedc67473b7d10676de567436d43c9</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:27:38</sys_created_on><sys_id>b55fd8a7473b7d10676de567436d4323</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_b55fd8a7473b7d10676de567436d4323</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-01-23 17:27:38</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>1956481588</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>9682e73c837d0a50e4ef7d447daad3bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a8e30000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>Default GET</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>b95fd8a7c53b7d108446163888fe7a25</update_guid>
+<update_guid_history>b95fd8a7c53b7d108446163888fe7a25:1956481588</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_properties_99abcc98c611229201e61dd0aa031339</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Incident activity formatter fields</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.ui.incident_activity.fields</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>glide.maint</sys_created_by><sys_created_on>2006-04-14 18:31:13</sys_created_on><sys_id>99abcc98c611229201e61dd0aa031339</sys_id><sys_mod_count>11</sys_mod_count><sys_name>glide.ui.incident_activity.fields</sys_name><sys_package display_value="Incident Management Best Practice - Jakarta" source="com.snc.best_practice.incident.jakarta">b7e3ee5b47d01110676de567436d4354</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_99abcc98c611229201e61dd0aa031339</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-08 16:27:19</sys_updated_on><type>string</type><value>assigned_to,cmdb_ci,incident_state,state,impact,priority,category,urgency,opened_by,assignment_group,service_offering,description,work_notes,comments,*EmailAutogenerated*,*EmailCorrespondence*,*Relations*,*Attachments*,close_code,close_notes,*Sidebar discussion*,*Sidebar posted message*,subcategory,business_service,u_institution,caller_id,contact_type,closed_by,closed_at</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=99abcc98c611229201e61dd0aa031339"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.incident_activity.fields" tablename="sys_properties">99abcc98c611229201e61dd0aa031339</documentkey><fieldname>description</fieldname><language>es</language><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 03:04:01</sys_created_on><sys_id>ca9872224711d110676de567436d43c0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 03:04:01</sys_updated_on><tablename>sys_properties</tablename><value>Lista de campos (separados por comas) que aparecen en el formateador de actividad para el incidente.</value></sys_translated_text></record_update>]]></payload>
+<payload_hash>879746509</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>9a82e73c837d0a50e4ef7d447daad3be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9830000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>glide.ui.incident_activity.fields</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>c6fa2ea493d40a107678813879204ee0</update_guid>
+<update_guid_history>c6fa2ea493d40a107678813879204ee0:879746509,94daa6a4ecd40a10d6a09eaa2a2168ca:-1626917982,2fbaad58861c861052316c89be4e7c5e:-123543025,2ce65b2f83ecf11082eb6b0178592c93:846339876,696616c93f68b110e915fddee5c9338f:277435941,656616c97d68b1107800a4a760d3d389:846339876,bd9875ef42617110643d228a4564389a:846339876</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_choice_incident_category</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="category" table="incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>category</element><name>incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_id>d3112ad347901110676de567436d4340</sys_id><sys_mod_count>0</sys_mod_count><sys_name>category</sys_name><sys_package display_value="Incident" source="com.snc.incident">8b112ad347901110676de567436d4305</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_choice_incident_category</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Consulta/ayuda</label><language>es</language><name>incident</name><sequence>1</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9d769eaa47955110676de567436d4352</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:53</sys_updated_on><value>inquiry</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Inquiry / Help</label><language>en</language><name>incident</name><sequence>1</sequence><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>db112ad347901110676de567436d433f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>inquiry</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Software</label><language>en</language><name>incident</name><sequence>2</sequence><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>1f112ad347901110676de567436d433f</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:53:01</sys_updated_on><value>software</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Software</label><language>es</language><name>incident</name><sequence>2</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>59769eaa47955110676de567436d4345</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:53</sys_updated_on><value>software</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Hardware</label><language>es</language><name>incident</name><sequence>3</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1d769eaa47955110676de567436d435b</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:52:27</sys_updated_on><value>hardware</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Hardware</label><language>en</language><name>incident</name><sequence>3</sequence><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>5f112ad347901110676de567436d433f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>hardware</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Network</label><language>en</language><name>incident</name><sequence>4</sequence><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>9f112ad347901110676de567436d433f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>network</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Red</label><language>es</language><name>incident</name><sequence>4</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>d5769eaa47955110676de567436d434e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:53</sys_updated_on><value>network</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Base de datos</label><language>es</language><name>incident</name><sequence>5</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>55769eaa47955110676de567436d4357</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:53</sys_updated_on><value>database</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Database</label><language>en</language><name>incident</name><sequence>5</sequence><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>df112ad347901110676de567436d433f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>database</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Gestión en la nube</label><language>es</language><name>incident</name><sequence>6</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:53</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>11769eaa47955110676de567436d434a</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:47:03</sys_updated_on><value>Cloud Management</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>WAN de SD</label><language>es</language><name>incident</name><sequence>6</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:17:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0492566a47155110676de567436d4337</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:42:21</sys_updated_on><value>sdwan</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Incidencia de pago</label><language>en</language><name>incident</name><sequence>7</sequence><synonyms/><sys_created_by>DevDevoteam6</sys_created_by><sys_created_on>2022-09-05 14:25:29</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5d2ac37897b55d50655570700153af3d</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam6</sys_updated_by><sys_updated_on>2022-09-05 14:25:53</sys_updated_on><value>Incidencia de pago</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Monitor</label><language>en</language><name>incident</name><sequence>8</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-02 15:08:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>447f576a97c4c650655570700153af85</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 17:16:29</sys_updated_on><value>monitoreo</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>category</element><hint/><inactive>false</inactive><label>Monitoreo</label><language>es</language><name>incident</name><sequence>8</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-02 15:09:21</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1e8fd36a97c4c650655570700153afbf</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 17:16:45</sys_updated_on><value>monitoreo</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>645120614</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>9e82e3f8837d0a50e4ef7d447daad37a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9490000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Category</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>20bce19c731c8610cb90aa6b5a13e64a</update_guid>
+<update_guid_history>20bce19c731c8610cb90aa6b5a13e64a:645120614,92ace19c1a1c86105c053742bf73a501:-1011885627,acaca19cba1c8610e92282b300aa881c:-442906085,d79c619c841c86103acfe0fb634123cc:1852178821,119f5b6ae5c4c650d4d080649430f662:1683363739,418f1b6adfc4c650e503df2a882ecb01:-1316538678,bf7fd76ac8c4c6500eaba0251d1e8210:-957164247,f1363325d3b57510803fb1c2693895d6:-670873065,a916f3e1aeb57510bd057f0e1d770888:1409653492,92d4bbe98e75751001bcfab63c547140:1831518475,61c37fe15e757510edc3686d78c40f71:1579095072,928fabad8bf17510d6277a928de6d3e7:-2028978373,fc6f2f6dc3f17510abb4376fdd965bbe:1627822840,fe0e6f6550f175103d295e0c8c32f5b9:1146067783,d9dce32dcdb17510787a0085bad53dc7:392293988,afda03f8b0b55d50a1b9978fff3efd5a:-670873065,f6cac3b8a2b55d50c3d8eb5206dff843:479663951,a1ca8fb89fb55d50178dcf98c260126c:-1699374973,a5ca8f781cb55d50a342a719d4ee03a6:-2004948121</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_choice_incident_u_institution</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="u_institution" table="incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>u_institution</element><name>incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>DevDevoteam5</sys_created_by><sys_created_on>2023-08-07 16:31:55</sys_created_on><sys_id>ededf1c547ec7110676de567436d43db</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_institution</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_choice_incident_u_institution</sys_update_name><sys_updated_by>DevDevoteam5</sys_updated_by><sys_updated_on>2023-08-07 16:31:55</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_institution</element><hint/><inactive>false</inactive><label>Tec de Monterrey</label><language>es</language><name>incident</name><sequence/><synonyms/><sys_created_by>DevDevoteam5</sys_created_by><sys_created_on>2023-08-07 16:32:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>000e75c547ec7110676de567436d43cb</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>DevDevoteam5</sys_updated_by><sys_updated_on>2023-08-07 16:32:26</sys_updated_on><value>Tec de Monterrey</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_institution</element><hint/><inactive>false</inactive><label>Tec de Monterrey</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>DevDevoteam5</sys_created_by><sys_created_on>2023-08-07 16:31:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>56dd35c547ec7110676de567436d4389</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>DevDevoteam5</sys_updated_by><sys_updated_on>2023-08-07 16:31:54</sys_updated_on><value>Tec de Monterrey</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_institution</element><hint/><inactive>false</inactive><label>TecMilenio</label><language>es</language><name>incident</name><sequence/><synonyms/><sys_created_by>DevDevoteam5</sys_created_by><sys_created_on>2023-08-07 16:32:37</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6e0ef9c547ec7110676de567436d4305</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>DevDevoteam5</sys_updated_by><sys_updated_on>2023-08-07 16:32:37</sys_updated_on><value>TecMilenio</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_institution</element><hint/><inactive>false</inactive><label>TecMilenio</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>DevDevoteam5</sys_created_by><sys_created_on>2023-08-07 16:32:13</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8bed35c547ec7110676de567436d4326</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>DevDevoteam5</sys_updated_by><sys_updated_on>2023-08-07 16:32:13</sys_updated_on><value>TecMilenio</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_institution</element><hint/><inactive>false</inactive><label>TecSalud</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-06 17:05:10</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>29606c0047d40610676de567436d431a</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-06 17:05:16</sys_updated_on><value>TecSalud</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value/><element>u_institution</element><hint/><inactive>false</inactive><label>TecSalud</label><language>es</language><name>incident</name><sequence/><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-06 17:05:22</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4170204047d40610676de567436d43cc</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-06 17:05:29</sys_updated_on><value>TecSalud</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>1328201962</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>9e82e73c837d0a50e4ef7d447daad3bd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a92a0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Institution</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>b980ac40d6d40610008d728676c8ecbd</update_guid>
+<update_guid_history>b980ac40d6d40610008d728676c8ecbd:1328201962,9d80ac402bd406106abb18f472fad280:1218384165,cc806c40c1d406104d8266457ba26ce5:-8484365,6a706c406ad40610b5b0808c238a065a:1007426357,09702c40fad40610d3a18e1560938cd3:-391213401,b30e3dc5efec711012550db8171da6e4:742924069,990eb9c539ec71104e5f455f4e02a49e:1465164884,46fd79c588ec7110d54ce75499194862:903287561,21ed75c598ec711070218312434106e8:-989222795</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_script_fc5466cc47c00250676de567436d43fe</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="incident"&gt;contact_type=integration^category=monitoreo^subcategoryINocc-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating^business_service.nameINInformática Power Center,SAP Basis,SAP DB,SAP ECC Tec Salud,SAP S/4 HANA,SAP HCM^EQ&lt;item display_value="Integración" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="integration"/&gt;&lt;item display_value="Monitoreo" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="monitoreo"/&gt;&lt;item display_value="occ-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating" endquery="false" field="subcategory" goto="false" newquery="false" operator="IN" or="false" value="occ-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating"/&gt;&lt;item endquery="false" field="business_service.name" goto="false" newquery="false" operator="IN" or="false" value="Informática Power Center,SAP Basis,SAP DB,SAP ECC Tec Salud,SAP S/4 HANA,SAP HCM"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;HBR-Solman Conecction&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var lib = new global.DVT_SolmanLibrary();
+	var comment=current.comments.getJournalEntry(1);
+	//is state is Resolved or closed
+	if(current.state==6||current.state==7)
+	{
+		comment= current.close_notes.getJournalEntry(1);
+	}
+	lib.sendAlert(current.number, current.state.getDisplayValue(), comment, '001');
+	
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-25 16:58:59&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fc5466cc47c00250676de567436d43fe&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;HBR-Solman Conecction&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_fc5466cc47c00250676de567436d43fe&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-08 19:39:47&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=fc5466cc47c00250676de567436d43fe"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;fc5466cc47c00250676de567436d43fe&lt;/documentkey&gt;&lt;fieldname&gt;message&lt;/fieldname&gt;&lt;language&gt;es&lt;/language&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-08 19:34:52&lt;/sys_created_on&gt;&lt;sys_id&gt;d5e517e0971c0a10655570700153af78&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-08 19:34:52&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_script&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;/record_update&gt;</payload>
+<payload_hash>241608228</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>9e82e73c837d0a50e4ef7d447daad3c0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9930000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>HBR-Solman Conecction</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>6d071b64031c0a1032b9097cf8e3268e</update_guid>
+<update_guid_history>6d071b64031c0a1032b9097cf8e3268e:241608228,c4d69364881c0a1052d26362359e705f:-1826494221,15e517e0f21c0a102976374f32efc67a:-1270350581,53c57288064402503fb716eb990d93b5:835177560,4f55fe086f440250935ec2c97b58ce76:446532107,8914f6c4ff440250a9e3c4fd74ee783d:-2072757944,efbe2a8ca004025081b8621470dd435a:-408253561,025ea64c7b0402503f9c9b059314fb1a:-2014052687,aafd224c7f040250d218ebaf9715aafd:-274134197,cfedee0c4104025010e58b222356e9eb:-2014052687,edfb2e481f040250e32b711176a83761:-274134197</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_fn_797fd8a7473b7d10676de567436d432e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>basic</authentication_type><basic_auth_password/><basic_auth_profile display_value="Solman SMD001_SNOW">82f189af47bb7d10676de567436d43ae</basic_auth_profile><basic_auth_user/><content>{&#13;
+"incident": "${incident}",&#13;
+ "status": "${status}", &#13;
+"comment": "${comment}"&#13;
+} </content><function_name>zconfirm</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>DVT- confirm the Solman alert [ zconfirm ]</qualified_name><rest_endpoint>https://20.97.51.215:44380/zconfirm?sap-client=001</rest_endpoint><rest_message display_value="DVT- confirm the Solman alert">d3eedc67473b7d10676de567436d43c9</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:29:36</sys_created_on><sys_id>797fd8a7473b7d10676de567436d432e</sys_id><sys_mod_count>18</sys_mod_count><sys_name>zconfirm</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_797fd8a7473b7d10676de567436d432e</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-12 15:16:47</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>-1663203719</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>d282e73c837d0a50e4ef7d447daad3bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a99f0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>zconfirm</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>3b21877daf90ce10ad5bc815ac589e06</update_guid>
+<update_guid_history>3b21877daf90ce10ad5bc815ac589e06:-1663203719,ebf48585bb1c8a10f8aafb9ce0556700:1966339608,5ec44d05a21c8a10a642be64e9be358a:-1171549938,08744d053c1c8a1071eec14f5b59c3af:-742472170,80c345054c1c8a108e5d151dd0f3c80e:-1663203719,5db34905a61c8a1035bf1936bcd484ac:1467453112,0d1c4481c8d48a105028598697d2727e:-1663203719,d76084c1a2948a10aee793f1dc00bdc8:-199467353,e220888139948a10a8391e87e5ec53db:1835515076,5b3cf73ce1548a109a2c7d91231deb47:-199467353,bb2c77b889548a105b6f681e3807320e:1835515076,253337bc6d148a102997471cf538b939:-199467353,c7f233bcbc148a100b5a3a02046138a0:-1377672160,d382b77c35148a10a63797bc161c7be1:-199467353,ec907fb881148a101d6a70ab533d52c6:249359558,ced9ea84ab040250f46227686eef3454:-639764745,b5cdeaffc2b3fd108417ae9c52413096:981163672,a2bd2affb8b3fd1004840ad1d11fd789:517929213,389da6ff34b3fd10bf6b91114cd2421c:518095681,97b0682b4e3b7d102fdd2488c1dfc395:-943995353,aacf94e7373b7d10facc959249db12db:-363230964</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_dictionary_override_9b23ec4447d40610676de567436d43ca</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override"><sys_dictionary_override action="DELETE"><attributes/><attributes_override>false</attributes_override><base_table>cmdb</base_table><calculation/><calculation_override>false</calculation_override><default_value/><default_value_override>false</default_value_override><dependent/><dependent_override>false</dependent_override><display_override>true</display_override><element>name</element><mandatory>false</mandatory><mandatory_override>false</mandatory_override><name>cmdb_ci_service</name><read_only>false</read_only><read_only_override>false</read_only_override><reference_qual/><reference_qual_override>false</reference_qual_override><sys_class_name>sys_dictionary_override</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-06 17:17:33</sys_created_on><sys_id>9b23ec4447d40610676de567436d43ca</sys_id><sys_mod_count>0</sys_mod_count><sys_name>name</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_dictionary_override_9b23ec4447d40610676de567436d43ca</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-06 17:17:33</sys_updated_on></sys_dictionary_override></record_update>]]></payload>
+<payload_hash>766136888</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>d682e73c837d0a50e4ef7d447daad3be</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9310000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>cmdb_ci_service</table>
+<target_name/>
+<type>Dictionary Entry Override</type>
+<update_domain>global</update_domain>
+<update_guid>41c3a0c430d4061002c749d3bc9c9df8</update_guid>
+<update_guid_history>41c3a0c430d4061002c749d3bc9c9df8:766136888,8c53e08437d40610bd7bba02ccd0369f:-481761724</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_ui_section_9eb58b109714c610655570700153afc4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="9eb58b109714c610655570700153afc4" sys_domain="global" table="question_answer" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>question</element><position>0</position><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-07 23:45:44</sys_created_on><sys_id>96b5cb109714c610655570700153af3c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="question_answer" sys_domain="global" view="Default view">9eb58b109714c610655570700153afc4</sys_ui_section><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 23:45:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>value</element><position>1</position><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-07 23:45:44</sys_created_on><sys_id>deb5cb109714c610655570700153af3c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="question_answer" sys_domain="global" view="Default view">9eb58b109714c610655570700153afc4</sys_ui_section><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 23:45:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>2</position><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-07 23:45:44</sys_created_on><sys_id>d2b5cb109714c610655570700153af3d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="question_answer" sys_domain="global" view="Default view">9eb58b109714c610655570700153afc4</sys_ui_section><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 23:45:44</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>table_name</element><position>3</position><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-07 23:45:44</sys_created_on><sys_id>d6b5cb109714c610655570700153af3d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="question_answer" sys_domain="global" view="Default view">9eb58b109714c610655570700153afc4</sys_ui_section><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 23:45:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>order</element><position>4</position><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-07 23:45:44</sys_created_on><sys_id>dab5cb109714c610655570700153af3d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="question_answer" sys_domain="global" view="Default view">9eb58b109714c610655570700153afc4</sys_ui_section><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 23:45:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>5</position><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-07 23:45:44</sys_created_on><sys_id>deb5cb109714c610655570700153af3d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="question_answer" sys_domain="global" view="Default view">9eb58b109714c610655570700153afc4</sys_ui_section><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 23:45:44</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>table_sys_id</element><position>6</position><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-07 23:45:44</sys_created_on><sys_id>d2b5cb109714c610655570700153af3e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="question_answer" sys_domain="global" view="Default view">9eb58b109714c610655570700153afc4</sys_ui_section><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 23:45:44</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>7</position><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-07 23:45:44</sys_created_on><sys_id>d6b5cb109714c610655570700153af3e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="question_answer" sys_domain="global" view="Default view">9eb58b109714c610655570700153afc4</sys_ui_section><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 23:45:44</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>question_answer</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-07 23:45:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9eb58b109714c610655570700153afc4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>question_answer</sys_name><sys_overrides/><sys_package display_value="Questionset Plugin" source="com.glideapp.questionset">59212ed347901110676de567436d4315</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_9eb58b109714c610655570700153afc4</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 23:45:44</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>-1030249240</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>d682e73c837d0a50e4ef7d447daad3c1</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9740000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>question_answer</table>
+<target_name>Question Answer</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>12b5cb105914c610a809f159b24afc40</update_guid>
+<update_guid_history>12b5cb105914c610a809f159b24afc40:-1030249240,52b5cb10ea14c610c158277187ba8a38:1848433829</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_auth_profile_basic_82f189af47bb7d10676de567436d43ae</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_auth_profile_basic"><sys_auth_profile_basic action="INSERT_OR_UPDATE"><name>Solman SMD001_SNOW</name><password>﷞﷟﷒f5dc4b57471c1110676de567436d4367﷬﷔1﷬﷭NTz8nFXRjy1aDkO6dB-pbw==62owFVkzxHebVWiiivoULRnU1Px2ATQT﷮﷯</password><sys_class_name>sys_auth_profile_basic</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 19:59:41</sys_created_on><sys_id>82f189af47bb7d10676de567436d43ae</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Solman SMD001_SNOW</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_auth_profile_basic_82f189af47bb7d10676de567436d43ae</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-01-23 19:59:41</sys_updated_on><username>SMD001_SNOW</username></sys_auth_profile_basic></record_update>]]></payload>
+<payload_hash>179246327</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>da82e3f8837d0a50e4ef7d447daad37a</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9160000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>Solman SMD001_SNOW</target_name>
+<type>Basic Auth Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>49224dafb9bb7d10e1b1b3b8bed2f787</update_guid>
+<update_guid_history>49224dafb9bb7d10e1b1b3b8bed2f787:179246327</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_choice_incident_subcategory</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_choice action="INSERT_OR_UPDATE" field="subcategory" table="incident" version="3"><sys_choice_set action="INSERT_OR_UPDATE"><element>subcategory</element><name>incident</name><sys_class_name>sys_choice_set</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_id>d7112ad347901110676de567436d4343</sys_id><sys_mod_count>0</sys_mod_count><sys_name>subcategory</sys_name><sys_package display_value="Incident" source="com.snc.incident">8b112ad347901110676de567436d4305</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_choice_incident_subcategory</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on></sys_choice_set><sys_choice action="INSERT_OR_UPDATE"><dependent_value>inquiry</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Antivirus</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>53112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>antivirus</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>CPU</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>97112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>cpu</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>database</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>DB2</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>53112ad347901110676de567436d4343</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>db2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>DHCP</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>9f112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>dhcp</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Disk</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>1b112ad347901110676de567436d4342</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:51:18</sys_updated_on><value>disk</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>DNS</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>13112ad347901110676de567436d4343</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:47:41</sys_updated_on><value>dns</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>software</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Email</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>57112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>email</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>inquiry</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Email</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>93112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>email</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>inquiry</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Internal Application</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>d3112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>internal application</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>IP Address</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>df112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>ip address</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Keyboard</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>9b112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>keyboard</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Memory</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>d7112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>memory</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Monitor</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>5b112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>monitor</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Mouse</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>db112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>mouse</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Ratón</label><language>es</language><name>incident</name><sequence/><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b176deaa47955110676de567436d436e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>mouse</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>database</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Oracle</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>93112ad347901110676de567436d4343</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>oracle</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>software</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Operating System</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>17112ad347901110676de567436d4342</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:49:23</sys_updated_on><value>os</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>database</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>MS SQL Server</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>d3112ad347901110676de567436d4343</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>sql server</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>VPN</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>1f112ad347901110676de567436d4342</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:53:01</sys_updated_on><value>vpn</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Wireless</label><language>en</language><name>incident</name><sequence/><synonyms/><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:14:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path/><sys_id>5f112ad347901110676de567436d4342</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>system</sys_updated_by><sys_updated_on>2022-06-30 16:14:06</sys_updated_on><value>wireless</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>inquiry</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Antivirus</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7576deaa47955110676de567436d43db</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>antivirus</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>CPU</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b976deaa47955110676de567436d4391</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>cpu</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>database</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>DB2</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7976deaa47955110676de567436d43c9</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>db2</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>DHCP</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3976deaa47955110676de567436d439a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>dhcp</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Disco</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f576deaa47955110676de567436d43d2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>disk</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>DNS</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bd76deaa47955110676de567436d437f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>dns</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>software</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Correo electrónico</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3d76deaa47955110676de567436d4388</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>email</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>inquiry</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Correo electrónico</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fd76deaa47955110676de567436d439e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>email</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>inquiry</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Aplicación interna</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f976deaa47955110676de567436d43c0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>internal application</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Dirección IP</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7576deaa47955110676de567436d4384</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>ip address</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Teclado</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3576deaa47955110676de567436d4365</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 18:00:44</sys_updated_on><value>keyboard</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Memoria</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7976deaa47955110676de567436d4372</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>memory</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>hardware</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Monitor</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b176deaa47955110676de567436d43c5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>monitor</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>database</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Oracle</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f576deaa47955110676de567436d437b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>oracle</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>software</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Sistema operativo</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3176deaa47955110676de567436d4377</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:59:22</sys_updated_on><value>os</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>Cloud Management</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Pregunta</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7176deaa47955110676de567436d4396</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>Question</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>sdwan</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Fallo de dispositivo</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:17:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4492566a47155110676de567436d4350</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:17:51</sys_updated_on><value>sdwan_device_failure</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>sdwan</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Fallo de enlace</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:17:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c092566a47155110676de567436d4361</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:17:51</sys_updated_on><value>sdwan_link_failure</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>sdwan</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Fallo de protocolo</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:17:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8892566a47155110676de567436d4365</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:17:51</sys_updated_on><value>sdwan_protocol_failure</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>sdwan</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Fallo de software</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:17:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0892566a47155110676de567436d436e</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:43:45</sys_updated_on><value>sdwan_software_failure</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>sdwan</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Fallo de enlace de WAN de software</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:17:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4092566a47155110676de567436d436a</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:17:51</sys_updated_on><value>sdwan_soft_wan_link_failure</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>database</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>MS SQL Server</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f176deaa47955110676de567436d438d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>sql server</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>VPN</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>f976deaa47955110676de567436d4369</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>vpn</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>network</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Inalámbrico</label><language>es</language><name>incident</name><sequence>0</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3d76deaa47955110676de567436d43df</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>wireless</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>Cloud Management</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Solicitud</label><language>es</language><name>incident</name><sequence>1</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3576deaa47955110676de567436d43bc</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 18:00:44</sys_updated_on><value>Request</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>Cloud Management</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Algo no funciona correctamente</label><language>es</language><name>incident</name><sequence>2</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a576deaa47955110676de567436d4360</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>Something is broken</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>Cloud Management</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Problema de rendimiento</label><language>es</language><name>incident</name><sequence>3</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3176deaa47955110676de567436d43ce</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam8</sys_updated_by><sys_updated_on>2023-10-10 17:59:22</sys_updated_on><value>Performance Issue</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>Cloud Management</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>Interrupción</label><language>es</language><name>incident</name><sequence>4</sequence><synonyms/><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 00:34:54</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bd76deaa47955110676de567436d43d6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 00:34:54</sys_updated_on><value>Outage</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>monitoreo</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>OCC-Integración</label><language>en</language><name>incident</name><sequence>100</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-02 15:13:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>6f70efaa97c4c650655570700153af7f</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 17:17:47</sys_updated_on><value>occ-Integracion</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>monitoreo</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>OCC-Base de Datos</label><language>en</language><name>incident</name><sequence>200</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-02 15:14:43</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>92a023aa97c4c650655570700153aff2</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 17:17:47</sys_updated_on><value>occ-base de datos</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>monitoreo</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>OCC-Rendimiento</label><language>en</language><name>incident</name><sequence>300</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-02 15:15:05</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>99d027ea97c4c650655570700153af05</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 17:17:47</sys_updated_on><value>occ-rendimiento</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>monitoreo</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>OCC-Aplicación</label><language>en</language><name>incident</name><sequence>400</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-02 15:15:27</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>cfe0abea97c4c650655570700153af87</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 17:17:47</sys_updated_on><value>occ-aplicacion</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>monitoreo</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>OCC-WF_IPC_Failed</label><language>en</language><name>incident</name><sequence>500</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-02 15:17:04</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a641efea97c4c650655570700153af4b</sys_id><sys_mod_count>2</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 17:17:47</sys_updated_on><value>occ-wf_ipc_failed</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>monitoreo</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>OCC-WF_IPC_Rating</label><language>en</language><name>incident</name><sequence>600</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-02 15:17:22</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9b51afea97c4c650655570700153afd2</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 17:17:47</sys_updated_on><value>occ-wf_ipc_rating</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>monitoreo</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>OCC-Jobs_TyC</label><language>en</language><name>incident</name><sequence>700</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-02 15:17:49</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fa61e32e97c4c650655570700153af4f</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 17:17:48</sys_updated_on><value>occ-jobs_tyc</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>monitoreo</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>OCC-Jobs_TecSalud</label><language>en</language><name>incident</name><sequence>800</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-02 15:18:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>2981e72e97c4c650655570700153aff9</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 17:17:48</sys_updated_on><value>occ-jobs_tecsalud</value></sys_choice><sys_choice action="INSERT_OR_UPDATE"><dependent_value>monitoreo</dependent_value><element>subcategory</element><hint/><inactive>false</inactive><label>OCC-Jobs_Finanzas</label><language>en</language><name>incident</name><sequence>900</sequence><synonyms/><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-02 15:18:32</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>7a91eb2e97c4c650655570700153af0e</sys_id><sys_mod_count>5</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 17:17:48</sys_updated_on><value>occ-jobs_finanzas</value></sys_choice></sys_choice></record_update>]]></payload>
+<payload_hash>643419803</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>da82e73c837d0a50e4ef7d447daad3bd</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a94e0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>Incident.Subcategory</target_name>
+<type>Choice list</type>
+<update_domain>global</update_domain>
+<update_guid>b7eca5dc4a1c8610eec48e74043dc91b</update_guid>
+<update_guid_history>b7eca5dc4a1c8610eec48e74043dc91b:643419803,ffec65dce31c861035712df6be54dbe6:846605829,7fec65dcdd1c8610ddfa86ff21d8d9d7:-1739529489,ebec65dc1b1c861098f41522575102c8:-386517863,6bec65dc0e1c861035207d8b4fd37fb9:-354609853,e7ec65dcca1c86101cad7677108cc2aa:-1373953875,67ec65dced1c8610755331696f0cc99b:959805335,e3ec65dc511c861022c02101d2dc678c:1136694721,23ec65dc931c861003a5c337dd961c7d:1277484139,fdba90488b9406109693249bdb0922bc:-170557355,76aa1048e394061058612a3c3250851b:-1369242895,d59a5c08549406106a662ffbd86bb1b4:1347344013,0e8a1c082e94061021b3ed70716d2329:1822952813,0b6a1808df94061052217c09d1df799f:1214936585,846ad408bb94061057b5cc9d7b6c2894:775280933,c85a5408d29406100e2e48e830a7499e:-493355259,273a1408a8940610b3173fd0f0d70324:1526955425,c7b1ef2ed8c4c65094adbdccd7b1a102:-219868483,9ab1af2e32c4c650119cb40f611d68bf:1647800539,85b1af2ec0c4c65010420d8269765175:-1386760754,37a16f2e55c4c6509b17c6de14ceadf5:-308274984,12a16f2ee3c4c650179e78378d4da062:305311106,71a16f2e18c4c65014fbd674f4755911:1876202257,d8a12f2e3fc4c650aa6ffe07d58f3998:1095585348,f691eb2e5bc4c650b7b73077a63976c9:-1765926937,5091eb2e7cc4c65047d43708701fab0c:-1244559368,6781ab2e04c4c6509584b9998e4ab868:220901656,2281ab2ec9c4c65092e89a00051d6740:-219901301,ad816b2ed2c4c6502d32b6345f5fc8c5:1763764061,e3716b2e6bc4c65054df7cf3a49aaa3f:-123653307,0b712b2ebcc4c650fa81456a268cb7ef:58057194,1071e72e43c4c650649401b14ac131f7:313117917,3e61e72e1dc4c650f57a7706c64dac96:680667940,d861a72e4ec4c650483e5cd5f99164c9:1164430849,a651a72e4dc4c65093cea0730c800d16:-1393044922,1041e32e12c4c6502463264a61a9eccf:-1532015647,ee31e32eadc4c65066783888e728654b:1786391457,fef02fea4cc4c6506f7882549c7ba1dd:-1315632880,a1e0abea51c4c65012dbdffc53be3514:-1308448809,44d0a7ea81c4c6503afaf866f08eb8e8:-1313211792,7ca0a3ea5fc4c650d2b8bfc8e880e79e:-1403088526,8ff77761a1f57510cb6500fb88860202:-363793840,76f7376105f57510b1e848c57b034df4:96737093,8ba7ffad3db57510fb7aa3b87b946e2f:-1540936392,43a7ffad63b575106810f9a1a1943b21:-940058421,79363325c0b57510f709a541f0f771fd:-1106240570,38d57b61aeb57510de173e369e1559db:729162421,bc65ffad5f757510208c9bbdee2f6fba:-875869752,27f43b2d08757510003d48dbdd8d99eb:1744703697,ce14f3a53c7575103df26ee0d0d2165e:-1581055890,b681376dc1357510dbf26169a15c300a:2022601465,7e81f36dd1357510c89e3b3974df9ffb:-1307258312,0b217ba942357510f1561e6ec223c4a6:-653940939,cf217ba95e357510ef9c6d77d3dc1397:-1261229042,9a8fabad91f175104e616b81f6ad82f5:-1901364973,c31fa32dc0f17510289c97b5201f5c85:-1536043020,41aee76973f17510e722cb89983b6856:-993384031,513eafa5fbf175109b4cb9e5e3ab6163:-1581968700,493dafaddbb17510c52c85c65d701e1d:-5472581,8d3dafad50b17510b8bc4605a4f74b03:-363793840</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_script_bc76204047180610676de567436d43e1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="incident"&gt;contact_type=integration^category=monitoreo^subcategoryINocc-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating^business_service=9ecb9c8847940610676de567436d4329^ORbusiness_service=711cd0c847940610676de567436d437c^ORbusiness_service=cf4c5c8847940610676de567436d4371^ORbusiness_service=406c18c847940610676de567436d438f^ORbusiness_service=b57c50c847940610676de567436d436e^ORbusiness_service=568c1cc847940610676de567436d4395^EQ&lt;item display_value="Integration" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="integration"/&gt;&lt;item display_value="Monitor" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="monitoreo"/&gt;&lt;item display_value="occ-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating" endquery="false" field="subcategory" goto="false" newquery="false" operator="IN" or="false" value="occ-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating"/&gt;&lt;item display_table="cmdb_ci_service" display_value="Informática Power Center" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="false" value="9ecb9c8847940610676de567436d4329"/&gt;&lt;item display_table="cmdb_ci_service" display_value="SAP Basis" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="true" value="711cd0c847940610676de567436d437c"/&gt;&lt;item display_table="cmdb_ci_service" display_value="SAP DB" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="true" value="cf4c5c8847940610676de567436d4371"/&gt;&lt;item display_table="cmdb_ci_service" display_value="SAP ECC Tec Salud" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="true" value="406c18c847940610676de567436d438f"/&gt;&lt;item display_table="cmdb_ci_service" display_value="SAP S/4 HANA" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="true" value="b57c50c847940610676de567436d436e"/&gt;&lt;item display_table="cmdb_ci_service" display_value="SAP HCM" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="true" value="568c1cc847940610676de567436d4395"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;HBR-New Solman Inc&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+        var infoLog = 'HIBERUS. \n';
+        infoLog += "Caller id: " + current.caller_id + "\n";
+        if (current.caller_id == '') {
+            current.caller_id = current.opened_by;
+        }
+        infoLog += "u_institution: " + current.u_institution + "\n";
+        if (current.u_institution == '') {
+            infoLog += "category: " + current.category + "\n";
+            if (current.category == 'monitoreo') {
+                current.u_institution = 'Tec de Monterrey';
+                if (current.subcategory == 'occ-jobs_tecsalud') {
+                    current.u_institution = 'TecSalud';
+                }
+            }
+            infoLog += "NUEVA u_institution: " + current.u_institution + "\n";
+        }
+        gs.info(infoLog);
+    }
+
+)(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-06 17:34:37&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;bc76204047180610676de567436d43e1&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;HBR-New Solman Inc&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_bc76204047180610676de567436d43e1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-08 16:02:10&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=bc76204047180610676de567436d43e1"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-384809221</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>da82e73c837d0a50e4ef7d447daad3c0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a97c0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>HBR-New Solman Inc</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>7535e22cc3940a103cff062101e30d57</update_guid>
+<update_guid_history>7535e22cc3940a103cff062101e30d57:-384809221,31d4eee8b6940a1065e8bb2e026eabac:1720049875,3cd326682d940a1094905323b7f8937e:-474710517,be336628ca940a10def90714fc4214e7:872433771,d3cba884fd1806100d6a9cb022efc22c:742545161,e837a080c31806105564da4a305d93b1:-1189671602</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sysrule_assignment_67ea648447180610676de567436d4365</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysrule_assignment"><sysrule_assignment action="INSERT_OR_UPDATE"><active>true</active><condition table="incident">contact_type=integration^category=monitoreo^subcategory=occ-jobs_tyc^business_service=568c1cc847940610676de567436d4395^EQ<item display_value="Integration" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="integration"/><item display_value="Monitor" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="monitoreo"/><item display_value="OCC-Jobs_TyC" endquery="false" field="subcategory" goto="false" newquery="false" operator="=" or="false" value="occ-jobs_tyc"/><item display_table="cmdb_ci_service" display_value="SAP HCM" endquery="false" field="business_service" goto="false" newquery="false" operator="=" or="false" value="568c1cc847940610676de567436d4395"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><description/><group display_value="WG-N2T-SAP-HCM-0001" name="WG-N2T-SAP-HCM-0001">0cc9fbae9748c650655570700153af90</group><match_conditions>ALL</match_conditions><name>HBR- SOLMAN SAP HCM</name><order>100</order><script>/**&#13;
+* Example:&#13;
+* The following script requires personalizing the instance to add the Malware category and the Security assignment group.&#13;
+* if (current.category == "Hardware")&#13;
+*    current.assignment_group.setDisplayValue("Hardware"); &#13;
+* else if (current.category == "Software")&#13;
+*    current.assignment_group.setDisplayValue("Software");&#13;
+* else if (current.category == "Malware")&#13;
+*    current.assignment_group.setDisplayValue("Security");	&#13;
+*&#13;
+* Another Example:&#13;
+* Release Planning Example, which assigns the last person assigned to a release to the current release.&#13;
+* current.release.product.service.assigned_to;&#13;
+*/</script><sys_class_name>sysrule_assignment</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-06 17:51:58</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>67ea648447180610676de567436d4365</sys_id><sys_mod_count>1</sys_mod_count><sys_name>HBR- SOLMAN SAP HCM</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sysrule_assignment_67ea648447180610676de567436d4365</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-07 18:14:52</sys_updated_on><table>incident</table><user/></sysrule_assignment></record_update>]]></payload>
+<payload_hash>-606487902</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>de82e3f8837d0a50e4ef7d447daad379</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a9560000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table>incident</table>
+<target_name>HBR- SOLMAN SAP HCM</target_name>
+<type>Assignment Rule</type>
+<update_domain>global</update_domain>
+<update_guid>63f9f990749c8610a7f45a5c4c1cd05a</update_guid>
+<update_guid_history>63f9f990749c8610a7f45a5c4c1cd05a:-606487902,622b2c44be18061032d45a5937936e6f:-1674764766</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_3eef98e7473b7d10676de567436d4311</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>status</name><rest_message_function display_value="zconfirm">797fd8a7473b7d10676de567436d432e</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:30:24</sys_created_on><sys_id>3eef98e7473b7d10676de567436d4311</sys_id><sys_mod_count>0</sys_mod_count><sys_name>status</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_3eef98e7473b7d10676de567436d4311</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-01-23 17:30:24</sys_updated_on><type>string</type><value>Resolved</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-1280707809</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V1">5682e3f8837d0a50e4ef7d447daad379</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:45</sys_created_on>
+<sys_id>de82e73c837d0a50e4ef7d447daad3bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e3595a8fc0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:45</sys_updated_on>
+<table/>
+<target_name>status</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>4effd8e7ca3b7d10c186acbd54b3d5f4</update_guid>
+<update_guid_history>4effd8e7ca3b7d10c186acbd54b3d5f4:-1280707809</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

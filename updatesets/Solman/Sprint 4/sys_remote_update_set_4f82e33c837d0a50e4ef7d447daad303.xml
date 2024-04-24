@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-04-24 04:42:49">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Se modifica el endpoint para conectarse a solman y se crean variables para generar los de la integración a solman</description>
+<inserted/>
+<name>HBR-HU393-API REST SOLMAN-DIFG-V2</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>7270fe1747f8ca10c62d01f4f16d439c</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>4f82e33c837d0a50e4ef7d447daad303</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_properties_fab070c3c3122200eeed99c8d1d3ae09</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Verify hostname and certificate chain presented by remote SSL hosts. Set to true to protect against MITM attacks. Overrides the com.glide.communications.trustmanager_trust_all property</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>com.glide.communications.httpclient.verify_hostname</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-10-10 17:28:29</sys_created_on><sys_id>fab070c3c3122200eeed99c8d1d3ae09</sys_id><sys_mod_count>4</sys_mod_count><sys_name>com.glide.communications.httpclient.verify_hostname</sys_name><sys_package display_value="High Security Settings" source="com.glide.high_security">6bb1ee1b47901110676de567436d4347</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_fab070c3c3122200eeed99c8d1d3ae09</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-27 00:12:26</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=fab070c3c3122200eeed99c8d1d3ae09"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="com.glide.communications.httpclient.verify_hostname" tablename="sys_properties">fab070c3c3122200eeed99c8d1d3ae09</documentkey><fieldname>description</fieldname><language>es</language><sys_created_by>francisco.bello</sys_created_by><sys_created_on>2022-08-17 03:02:09</sys_created_on><sys_id>e228be2e47dd9110676de567436d4381</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>francisco.bello</sys_updated_by><sys_updated_on>2022-08-17 03:02:09</sys_updated_on><tablename>sys_properties</tablename><value>Compruebe la cadena de certificado y nombre de host presentada por hosts SSL remotos. El valor se define como Verdadero para protegerlo contra los ataques MITM. Anula la propiedad com.glide.communications.trustmanager_trust_all</value></sys_translated_text></record_update>]]></payload>
+<payload_hash>698257371</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V2">4f82e33c837d0a50e4ef7d447daad303</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>0382e33c837d0a50e4ef7d447daad305</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a1943b0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<table/>
+<target_name>com.glide.communications.httpclient.verify_hostname</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>360245a6b52c8690164d31111f91719c</update_guid>
+<update_guid_history>360245a6b52c8690164d31111f91719c:698257371,f35240cbe0d00650d9e1c7bb4429fab6:766783958,f91999aa15980610382231101e9eeaa3:-1060316662,386044c1bf948a102ff8b2041c5c924e:698257371,3a104881a2948a101f973cb24abd8fc4:766783958,22108c41ab948a1042202d99e44bc82c:-1060316662,43bd66136bf8ca1097d2dd8596afc3ea:-1060316662</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_properties_4c82a39697248690655570700153afe5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>true</ignore_cache><is_private>false</is_private><name>solman.sap.client</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-26 17:15:13</sys_created_on><sys_id>4c82a39697248690655570700153afe5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>solman.sap.client</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_4c82a39697248690655570700153afe5</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-26 17:15:13</sys_updated_on><type>string</type><value>001</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=4c82a39697248690655570700153afe5"/></record_update>]]></payload>
+<payload_hash>172201718</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V2">4f82e33c837d0a50e4ef7d447daad303</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>0782e33c837d0a50e4ef7d447daad304</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a194150000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<table/>
+<target_name>solman.sap.client</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>0782a7d641248690ba13668e602218f9</update_guid>
+<update_guid_history>0782a7d641248690ba13668e602218f9:172201718</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_script_fc5466cc47c00250676de567436d43fe</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition table="incident"&gt;contact_type=integration^category=monitoreo^subcategoryINocc-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating^business_service.nameINInformática Power Center,SAP Basis,SAP DB,SAP ECC Tec Salud,SAP S/4 HANA,SAP HCM^EQ&lt;item display_value="Integration" endquery="false" field="contact_type" goto="false" newquery="false" operator="=" or="false" value="integration"/&gt;&lt;item display_value="Monitor" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="monitoreo"/&gt;&lt;item display_value="occ-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating" endquery="false" field="subcategory" goto="false" newquery="false" operator="IN" or="false" value="occ-aplicacion,occ-base de datos,occ-Integracion,occ-jobs_finanzas,occ-jobs_tecsalud,occ-jobs_tyc,occ-rendimiento,occ-wf_ipc_failed,occ-wf_ipc_rating"/&gt;&lt;item endquery="false" field="business_service.name" goto="false" newquery="false" operator="IN" or="false" value="Informática Power Center,SAP Basis,SAP DB,SAP ECC Tec Salud,SAP S/4 HANA,SAP HCM"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/filter_condition&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;HBR-Solman Conecction&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var lib = new global.DVT_SolmanLibrary();
+	var comment=current.comments.getJournalEntry(1);
+	var sapClient=gs.getProperty('solman.sap.client');
+	//is state is Resolved or closed
+	if(current.state==6||current.state==7)
+	{
+		comment= current.close_notes;
+	}
+	lib.sendAlert(current.number, current.state.getDisplayValue(), comment, sapClient);
+	
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-25 16:58:59&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;fc5466cc47c00250676de567436d43fe&lt;/sys_id&gt;&lt;sys_mod_count&gt;12&lt;/sys_mod_count&gt;&lt;sys_name&gt;HBR-Solman Conecction&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_fc5466cc47c00250676de567436d43fe&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-26 17:17:33&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=fc5466cc47c00250676de567436d43fe"/&gt;&lt;sys_translated_text action="INSERT_OR_UPDATE"&gt;&lt;documentkey&gt;fc5466cc47c00250676de567436d43fe&lt;/documentkey&gt;&lt;fieldname&gt;message&lt;/fieldname&gt;&lt;language&gt;es&lt;/language&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-02-08 19:34:52&lt;/sys_created_on&gt;&lt;sys_id&gt;d5e517e0971c0a10655570700153af78&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-08 19:34:52&lt;/sys_updated_on&gt;&lt;tablename&gt;sys_script&lt;/tablename&gt;&lt;value/&gt;&lt;/sys_translated_text&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1022767774</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V2">4f82e33c837d0a50e4ef7d447daad303</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>0f82e33c837d0a50e4ef7d447daad305</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a1941c0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<table>incident</table>
+<target_name>HBR-Solman Conecction</target_name>
+<type>Business Rule</type>
+<update_domain>global</update_domain>
+<update_guid>6d13271a2a24869091bbfd15cdbbffb9</update_guid>
+<update_guid_history>6d13271a2a24869091bbfd15cdbbffb9:-1022767774,6d926f96b32486907f5fc32c781b5e5d:-1617870720,6d071b64031c0a1032b9097cf8e3268e:241608228,c4d69364881c0a1052d26362359e705f:-1826494221,15e517e0f21c0a102976374f32efc67a:-1270350581,53c57288064402503fb716eb990d93b5:835177560,4f55fe086f440250935ec2c97b58ce76:446532107,8914f6c4ff440250a9e3c4fd74ee783d:-2072757944,efbe2a8ca004025081b8621470dd435a:-408253561,025ea64c7b0402503f9c9b059314fb1a:-2014052687,aafd224c7f040250d218ebaf9715aafd:-274134197,cfedee0c4104025010e58b222356e9eb:-2014052687,edfb2e481f040250e32b711176a83761:-274134197</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_properties_3b99b6b2979cc250655570700153afb5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Activar logs para la integración de solman. El log empieza con la palabra SOLMAN</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>solman.active.log</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-15 17:18:26</sys_created_on><sys_id>3b99b6b2979cc250655570700153afb5</sys_id><sys_mod_count>4</sys_mod_count><sys_name>solman.active.log</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_3b99b6b2979cc250655570700153afb5</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-26 18:50:30</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=3b99b6b2979cc250655570700153afb5"/></record_update>]]></payload>
+<payload_hash>1535288634</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V2">4f82e33c837d0a50e4ef7d447daad303</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>4382e33c837d0a50e4ef7d447daad304</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a1942f0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<table/>
+<target_name>solman.active.log</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>835837da1aa486902a8d2c21277fee36</update_guid>
+<update_guid_history>835837da1aa486902a8d2c21277fee36:1535288634,9a14bf9224a48690c4cb7641c5264c66:425010160,8491af567a2486902b59ad21dbeebe8a:2008134431,506f1b929e24869053795b22fb83304a:425010160,03c9bab2f29cc25065ea090a86388feb:-1856764223</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_51dfd4e7473b7d10676de567436d43cd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>incident</name><rest_message_function display_value="zconfirm">797fd8a7473b7d10676de567436d432e</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:30:07</sys_created_on><sys_id>51dfd4e7473b7d10676de567436d43cd</sys_id><sys_mod_count>4</sys_mod_count><sys_name>incident</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_51dfd4e7473b7d10676de567436d43cd</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-26 15:48:34</sys_updated_on><type>string</type><value>INC0010349</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>277133660</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V2">4f82e33c837d0a50e4ef7d447daad303</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>4b82e33c837d0a50e4ef7d447daad305</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a1940f0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<table/>
+<target_name>incident</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>fdbe475e06a086903ce3f45688698f41</update_guid>
+<update_guid_history>fdbe475e06a086903ce3f45688698f41:277133660,a09ecb1e59a0869030d5a8d8d1c530e6:-685465086,c43d0b9af1a086900fb1903e23967f83:1226123810,ceb200cbf9d00650ac44b7657b3765f8:-685465086,c2ef50e7353b7d10aaddf3911ff797a4:-1932115546</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_properties_ca85a61747141110648cd706536d4323</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>The default value of 'false' means that ServiceNow trusts only certificates from a Certificate Authority recognized in the JVM. In this default case, the ServiceNow platform does not accept self-issued certificates.</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>com.glide.communications.trustmanager_trust_all</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>system</sys_created_by><sys_created_on>2022-06-30 16:32:09</sys_created_on><sys_id>ca85a61747141110648cd706536d4323</sys_id><sys_mod_count>2</sys_mod_count><sys_name>com.glide.communications.trustmanager_trust_all</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_ca85a61747141110648cd706536d4323</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-27 00:12:31</sys_updated_on><type>boolean</type><value>false</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=ca85a61747141110648cd706536d4323"/></record_update>]]></payload>
+<payload_hash>588377557</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V2">4f82e33c837d0a50e4ef7d447daad303</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>4f82e33c837d0a50e4ef7d447daad304</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a194410000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<table/>
+<target_name>com.glide.communications.trustmanager_trust_all</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>4c1285a6092c8690e7c894de24a5e843</update_guid>
+<update_guid_history>4c1285a6092c8690e7c894de24a5e843:588377557,0f428c8bdbd006503df3713bbf4bd74c:-867714438,cf42c88b5cd006509ba464effe93317d:588377557</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_fn_797fd8a7473b7d10676de567436d432e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>basic</authentication_type><basic_auth_password/><basic_auth_profile display_value="Solman SMD001_SNOW">82f189af47bb7d10676de567436d43ae</basic_auth_profile><basic_auth_user/><content>{&#13;
+"incident": "${incident}",&#13;
+ "status": "${status}", &#13;
+"comment": "${comment}"&#13;
+} </content><function_name>zconfirm</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>DVT- confirm the Solman alert [ zconfirm ]</qualified_name><rest_endpoint>https://alservs01.itesm.mx:44380/zconfirm?sap-client=${sap-client}</rest_endpoint><rest_message display_value="DVT- confirm the Solman alert">d3eedc67473b7d10676de567436d43c9</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:29:36</sys_created_on><sys_id>797fd8a7473b7d10676de567436d432e</sys_id><sys_mod_count>21</sys_mod_count><sys_name>zconfirm</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_797fd8a7473b7d10676de567436d432e</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-26 18:30:43</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>463176308</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V2">4f82e33c837d0a50e4ef7d447daad303</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>8782e33c837d0a50e4ef7d447daad305</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a194230000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<table/>
+<target_name>zconfirm</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>0dd3f79291a48690aedf058fc61fabe9</update_guid>
+<update_guid_history>0dd3f79291a48690aedf058fc61fabe9:463176308,13733f5263a486905670a52e1059eabe:-1809443809,5a86039244a08690daf7129d3f5b885f:463176308,d6a3879ea0608690f8ade00857c9a3cd:973571765,1b4c6b959ce04290b8d610a1ddcff5df:1966339608,b19afab2b09cc25062162eea3963f05c:-1663203719,f3d9b6b2899cc2507fcf1dea33930bf5:-881331466,3b21877daf90ce10ad5bc815ac589e06:-1663203719,ebf48585bb1c8a10f8aafb9ce0556700:1966339608,5ec44d05a21c8a10a642be64e9be358a:-1171549938,08744d053c1c8a1071eec14f5b59c3af:-742472170,80c345054c1c8a108e5d151dd0f3c80e:-1663203719,5db34905a61c8a1035bf1936bcd484ac:1467453112,0d1c4481c8d48a105028598697d2727e:-1663203719,d76084c1a2948a10aee793f1dc00bdc8:-199467353,e220888139948a10a8391e87e5ec53db:1835515076,5b3cf73ce1548a109a2c7d91231deb47:-199467353,bb2c77b889548a105b6f681e3807320e:1835515076,253337bc6d148a102997471cf538b939:-199467353,c7f233bcbc148a100b5a3a02046138a0:-1377672160,d382b77c35148a10a63797bc161c7be1:-199467353,ec907fb881148a101d6a70ab533d52c6:249359558,ced9ea84ab040250f46227686eef3454:-639764745,b5cdeaffc2b3fd108417ae9c52413096:981163672,a2bd2affb8b3fd1004840ad1d11fd789:517929213,389da6ff34b3fd10bf6b91114cd2421c:518095681,97b0682b4e3b7d102fdd2488c1dfc395:-943995353,aacf94e7373b7d10facc959249db12db:-363230964</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_properties_b212400b97d00650655570700153aff0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>true</ignore_cache><is_private>false</is_private><name>com.glide.communications.httpclient.verify_revoked_certificate</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-02-15 22:34:41</sys_created_on><sys_id>b212400b97d00650655570700153aff0</sys_id><sys_mod_count>1</sys_mod_count><sys_name>com.glide.communications.httpclient.verify_revoked_certificate</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_b212400b97d00650655570700153aff0</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-27 00:12:35</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=b212400b97d00650655570700153aff0"/></record_update>]]></payload>
+<payload_hash>-724491288</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V2">4f82e33c837d0a50e4ef7d447daad303</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>8b82e33c837d0a50e4ef7d447daad304</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a194480000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<table/>
+<target_name>com.glide.communications.httpclient.verify_revoked_certificate</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>c91285a6542c8690ad6cca1ac37dbbdb</update_guid>
+<update_guid_history>c91285a6542c8690ad6cca1ac37dbbdb:-724491288,fb220c8bdcd00650ac42d3ba78d51115:733327911</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_rest_message_d3eedc67473b7d10676de567436d43c9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message"><sys_rest_message action="INSERT_OR_UPDATE"><access>public</access><authentication_type>no_authentication</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><description>When an incident is resolved, ServiceNow should call this API to confirm the Solman alert. </description><name>DVT- confirm the Solman alert</name><oauth2_profile/><protocol_name/><rest_endpoint>https://alservs01.itesm.mx:44380/zconfirm?sap-client=001</rest_endpoint><sys_class_name>sys_rest_message</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2024-01-23 17:27:38</sys_created_on><sys_id>d3eedc67473b7d10676de567436d43c9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>DVT- confirm the Solman alert</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_d3eedc67473b7d10676de567436d43c9</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-26 15:13:17</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mutual_auth>false</use_mutual_auth></sys_rest_message></record_update>]]></payload>
+<payload_hash>1114416825</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V2">4f82e33c837d0a50e4ef7d447daad303</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>c382e33c837d0a50e4ef7d447daad305</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a193fc0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<table/>
+<target_name>DVT- confirm the Solman alert</target_name>
+<type>REST Message</type>
+<update_domain>global</update_domain>
+<update_guid>01a6439209a08690b275cf50cfb7f0f7</update_guid>
+<update_guid_history>01a6439209a08690b275cf50cfb7f0f7:1114416825,395fd8a7dc3b7d1002b62bac92c95027:1394413240</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_properties_917c5fb247188250676de567436d43bb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>true</ignore_cache><is_private>false</is_private><name>glide.rest.debug</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>joel.flores@snc</sys_created_by><sys_created_on>2024-02-15 19:50:03</sys_created_on><sys_id>917c5fb247188250676de567436d43bb</sys_id><sys_mod_count>3</sys_mod_count><sys_name>glide.rest.debug</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_917c5fb247188250676de567436d43bb</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2024-02-26 23:13:13</sys_updated_on><type>boolean</type><value>false</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=917c5fb247188250676de567436d43bb"/></record_update>]]></payload>
+<payload_hash>-1904260477</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V2">4f82e33c837d0a50e4ef7d447daad303</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>c782e33c837d0a50e4ef7d447daad304</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a194350000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<table/>
+<target_name>glide.rest.debug</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>23747c6657e8869069ef4bb5c2c8ac77</update_guid>
+<update_guid_history>23747c6657e8869069ef4bb5c2c8ac77:-1904260477,c6543c6642e886908ce6c762b10abf1a:-393932788,59bc5bb2c418825027bab85d8409cf7c:-1904260477,808cd372d51882505cf70be3fbc7b107:-393932788</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_script_include_78d56a8047040250676de567436d43b9</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.DVT_SolmanLibrary&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Library containing the necessary methods for the connection to solman.&lt;/description&gt;&lt;name&gt;DVT_SolmanLibrary&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var DVT_SolmanLibrary = Class.create();
+DVT_SolmanLibrary.prototype = {
+    initialize: function() {},
+
+    sendAlert: function(incNumber, incStatus, incComment, sapClient) {
+		var activeLog=gs.getProperty('solman.active.log');
+        var requestBody;
+        var responseBody;
+        var status;
+        var sm;
+		var log='SOLMAN\n';
+        try {
+
+            sm = new sn_ws.RESTMessageV2("DVT- confirm the Solman alert", "zconfirm");
+            sm.setStringParameterNoEscape("incident", incNumber);
+			sm.setStringParameterNoEscape("status", incStatus);
+			sm.setStringParameterNoEscape("comment", incComment);
+			sm.setStringParameterNoEscape("sap-client", sapClient);
+            sm.setHttpTimeout(10000); //In milliseconds. Wait at most 10 seconds for response from http request.
+
+            response = sm.execute(); //Might throw exception if http connection timed out or some issue with sending request itself because of encryption/decryption of password.
+            responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();
+            status = response.getStatusCode();
+        } catch (ex) {
+            responseBody = ex.getMessage();
+            status = '500';
+        } finally {
+            requestBody = sm ? sm.getRequestBody() : null;
+        }
+		log+='Request Body: ' + requestBody+'\n';
+		log+='Response: ' + responseBody+'\n';
+		log+='HTTP Status: ' + status+'\n';
+
+		if(activeLog=='true'){
+			gs.info(log);
+		}		
+       
+    },
+
+    type: 'DVT_SolmanLibrary'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-01-25 16:46:23&lt;/sys_created_on&gt;&lt;sys_id&gt;78d56a8047040250676de567436d43b9&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;DVT_SolmanLibrary&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_78d56a8047040250676de567436d43b9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-02-26 18:35:00&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1923435639</payload_hash>
+<remote_update_set display_value="HBR-HU393-API REST SOLMAN-DIFG-V2">4f82e33c837d0a50e4ef7d447daad303</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 04:42:49</sys_created_on>
+<sys_id>cf82e33c837d0a50e4ef7d447daad305</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18e35a194290000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 04:42:49</sys_updated_on>
+<table/>
+<target_name>DVT_SolmanLibrary</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>c0d4b7167ca486900c64398e16d8ce35</update_guid>
+<update_guid_history>c0d4b7167ca486900c64398e16d8ce35:1923435639,4281af560124869097d6556f0eacb60c:104011643,ec9f1792c6248690f94562751b06535d:-1976188037,8df53a88484402504f2c6b04a2799bfb:-733477855,8d192e84c1040250016545be3113fdaa:1893017915</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
