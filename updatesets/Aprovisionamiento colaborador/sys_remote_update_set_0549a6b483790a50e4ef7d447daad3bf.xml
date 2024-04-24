@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-04-24 00:32:33">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Se agrega el recinto y la clave de recinto al activity del perfil</description>
+<inserted/>
+<name>DVT-SP4-HU1168-DIFG v2</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>97d75263473bb114ea6d6802e26d43e7</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:32:33</sys_created_on>
+<sys_id>0549a6b483790a50e4ef7d447daad3bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:32:33</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_properties_01df7851976f9990655570700153af1a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Membership activity formatter fields</description><ignore_cache>false</ignore_cache><is_private>false</is_private><name>glide.ui.u_membership_activity.fields</name><read_roles/><suffix>global</suffix><sys_class_name>sys_properties</sys_class_name><sys_created_by>DevDevoteam3</sys_created_by><sys_created_on>2022-12-02 17:25:16</sys_created_on><sys_id>01df7851976f9990655570700153af1a</sys_id><sys_mod_count>1</sys_mod_count><sys_name>glide.ui.u_membership_activity.fields</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_01df7851976f9990655570700153af1a</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2023-10-24 16:19:20</sys_updated_on><type>string</type><value>u_membership_id,u_user,u_membership_type,u_account_status,u_campus_sede,u_mail_domain,u_service_profile,u_institution,sys_updated_on,sys_updated_by,u_division_key,u_clave_major,u_society_key,u_subdivision_key,u_academic_program_key,u_contact_email,u_alternative_email,u_subdivision_description,u_division_description,u_society_description,u_academic_program_description,u_gratuate_status,u_number,u_academic_role,sys_created_on,sys_created_by,u_recinto_fisico_desc,u_recintofisico,u_academic_level,u_account_status_string,u_activation_status,u_date_graduation,u_date_graduation_string</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=01df7851976f9990655570700153af1a"/><sys_translated_text action="INSERT_OR_UPDATE"><documentkey name="glide.ui.u_membership_activity.fields" tablename="sys_properties">01df7851976f9990655570700153af1a</documentkey><fieldname>description</fieldname><language>es</language><sys_created_by>DevDevoteam3</sys_created_by><sys_created_on>2022-12-02 17:25:16</sys_created_on><sys_id>89df7851976f9990655570700153af1b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>DevDevoteam3</sys_updated_by><sys_updated_on>2022-12-02 17:25:16</sys_updated_on><tablename>sys_properties</tablename><value>Afiliación Campos de formateador de actividad</value></sys_translated_text></record_update>]]></payload>
+<payload_hash>1971037106</payload_hash>
+<remote_update_set display_value="DVT-SP4-HU1168-DIFG v2">0549a6b483790a50e4ef7d447daad3bf</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:32:33</sys_created_on>
+<sys_id>0949a6b483790a50e4ef7d447daad3bf</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d393f1cf40000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:32:33</sys_updated_on>
+<table/>
+<target_name>glide.ui.u_membership_activity.fields</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>0207af8ebacaf1500c7e21604bffcf13</update_guid>
+<update_guid_history>0207af8ebacaf1500c7e21604bffcf13:1971037106,79df7c91786f99901a682347cd379f7d:1837776317,c5df7851296f99909933413b9ff3211d:1837776317</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-04-24 00:32:39">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Si la fechad de graduación está vacía se mantiene en blanco el campo</description>
+<inserted/>
+<name>DVT-SP4-HU1168-DIFG v3</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>9418d663473bb114ea6d6802e26d4312</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:32:38</sys_created_on>
+<sys_id>2249e6b483790a50e4ef7d447daad396</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:32:38</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_transform_entry_50950b1997ef6150655570700153af07</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_entry"&gt;&lt;sys_transform_entry action="INSERT_OR_UPDATE"&gt;&lt;choice_action&gt;create&lt;/choice_action&gt;&lt;coalesce&gt;false&lt;/coalesce&gt;&lt;coalesce_case_sensitive&gt;false&lt;/coalesce_case_sensitive&gt;&lt;coalesce_empty_fields&gt;false&lt;/coalesce_empty_fields&gt;&lt;date_format&gt;yyyy-MM-dd HH:mm:ss&lt;/date_format&gt;&lt;map display_value="Aprovisionamiento Membership"&gt;3d760d6a47221d10676de567436d4385&lt;/map&gt;&lt;reference_value_field/&gt;&lt;source_field&gt;[Script]&lt;/source_field&gt;&lt;source_script&gt;&lt;![CDATA[answer = (function transformEntry(source) {
+	//gs.info("dvt fecha de graduación: "+source.u_fecha_de_graduación);
+	var log='dvt \n';
+	var graduatioDateString = source.u_fecha_de_graduación;
+	var ret='';
+	log+="fecha de graduación: "+source.u_fecha_de_graduación+" \n";
+	log+="fecha de graduación length: "+graduatioDateString.length+" \n";
+	
+	if(graduatioDateString!=""){
+		log+="Entró al if"+" \n";
+		ret= graduatioDateString.replace(/ /g, ", ");
+	}
+	log+="Retornar: "+ret;
+	//gs.info(log);
+	return ret;
+})(source);]]&gt;&lt;/source_script&gt;&lt;source_table&gt;u_aprovisionamiento_tec&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_entry&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam3&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-06-19 23:21:12&lt;/sys_created_on&gt;&lt;sys_id&gt;50950b1997ef6150655570700153af07&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;[Script]&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_entry_50950b1997ef6150655570700153af07&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-11-07 16:19:40&lt;/sys_updated_on&gt;&lt;target_field&gt;u_date_graduation_string&lt;/target_field&gt;&lt;target_table&gt;u_membership&lt;/target_table&gt;&lt;use_source_script&gt;true&lt;/use_source_script&gt;&lt;/sys_transform_entry&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1864925959</payload_hash>
+<remote_update_set display_value="DVT-SP4-HU1168-DIFG v3">2249e6b483790a50e4ef7d447daad396</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:32:38</sys_created_on>
+<sys_id>2649e6b483790a50e4ef7d447daad396</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18d393fee1b0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:32:38</sys_updated_on>
+<table/>
+<target_name>[Script]</target_name>
+<type>Field Map</type>
+<update_domain>global</update_domain>
+<update_guid>1f5de72e25163510396eee67055aee53</update_guid>
+<update_guid_history>1f5de72e25163510396eee67055aee53:1864925959,c56aafe6cb16351074d236af0ef77430:586821223,609963e6031635103aeaf7f9791779de:527514731,4e88af669d1635108dd9a3f2c3ff433d:-1341223237,e797eb26f8163510972fb9c575a1abb3:1129569212,b5676726cb16351073d6926574bf776c:600242428,3375e762521635105009d8ce2581ed94:86813309,d29423222a1635101c907b3316a70c2b:-1429411237,a6e12092c4776990ab5d52604f85fa13:600242428,d3a54799b8ef61505f355666354a504b:-1154361918</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

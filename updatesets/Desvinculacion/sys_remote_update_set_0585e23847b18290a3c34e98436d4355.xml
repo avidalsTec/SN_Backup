@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-04-24 00:16:10">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<application_name>Customer Service</application_name>
+<application_scope>sn_customerservice</application_scope>
+<application_version>24.5.2</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description> Hicimos la prueba con el CASO "CS0001495-23112", y solo cerramos ciertas tareas (no todas), y dimos resuelto al caso, y lo puso en resuelto y envio la notificación.</description>
+<inserted/>
+<name>DVT-SP4-Issue EP43-ID09-DIFG v2</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>42a285a397200e9086947776f053af90</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:16:09</sys_created_on>
+<sys_id>0585e23847b18290a3c34e98436d4355</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:16:09</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_ui_related_sn_customerservice_sf_case_null</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_related sys_domain="global" table="sn_customerservice_sf_case" version="2" view=""><sys_ui_related_list_entry action="INSERT_OR_UPDATE"><filter/><list_id display_value="Customer Service Case Flow - Default view" name="sn_customerservice_sf_case" related_list="NULL" sys_domain="global" view="Default view">fa31f3f1974f3150655570700153af87</list_id><order_by/><position>0</position><related_list>REL:67bdac52374010008687ddb1967334ee</related_list><sys_class_name>sys_ui_related_list_entry</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2023-12-12 15:28:12</sys_created_on><sys_id>7e31f3f1974f3150655570700153af89</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2023-12-12 15:28:12</sys_updated_on></sys_ui_related_list_entry><sys_ui_related_list action="INSERT_OR_UPDATE"><calculated_name>Customer Service Case Flow - Default view</calculated_name><filter/><name>sn_customerservice_sf_case</name><order_by/><position/><related_list/><sys_class_name>sys_ui_related_list</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2023-12-12 15:28:12</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fa31f3f1974f3150655570700153af87</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Customer Service Case Flow - Default view</sys_name><sys_package display_value="Customer Service" source="sn_customerservice">51d811fad7223100b7490ee60e61034f</sys_package><sys_policy/><sys_scope display_value="Customer Service">51d811fad7223100b7490ee60e61034f</sys_scope><sys_update_name>sys_ui_related_sn_customerservice_sf_case_null</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2023-12-12 15:28:12</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_related_list></sys_ui_related></record_update>]]></payload>
+<payload_hash>-1393507050</payload_hash>
+<remote_update_set display_value="DVT-SP4-Issue EP43-ID09-DIFG v2">0585e23847b18290a3c34e98436d4355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:16:09</sys_created_on>
+<sys_id>0185e23847b18290a3c34e98436d4357</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18df7ea49d60000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:16:09</sys_updated_on>
+<table>sn_customerservice_sf_case</table>
+<target_name>Customer Service Case Flow</target_name>
+<type>Related Lists</type>
+<update_domain>global</update_domain>
+<update_guid>3a31f3f1364f31501bd912f695b9518b</update_guid>
+<update_guid_history>3a31f3f1364f31501bd912f695b9518b:-1393507050</update_guid_history>
+<update_set display_value=""/>
+<view>Default view</view>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_ui_action_69d14a63c3123100d6d210c422d3aed1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;proposeSolution&lt;/action_name&gt;&lt;active&gt;false&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+	
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;(new global.CSManagementUtils().isProposeSolnUIActionValid()) &amp;amp;&amp;amp; current.state==10 &amp;amp;&amp;amp; (new global.StateFlow().validFlow(current, '8db14a63c3123100d6d210c422d3ae7a', 'manual'));&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Propose Solution&lt;/name&gt;&lt;onclick&gt;runClientCode()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[new global.StateFlow().processFlow(current, '8db14a63c3123100d6d210c422d3ae7a', 'manual');]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-02-24 00:05:22&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;69d14a63c3123100d6d210c422d3aed1&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Propose Solution&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Customer Service" source="sn_customerservice"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Customer Service"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_69d14a63c3123100d6d210c422d3aed1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-12 15:32:15&lt;/sys_updated_on&gt;&lt;table&gt;sn_customerservice_case&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>325072995</payload_hash>
+<remote_update_set display_value="DVT-SP4-Issue EP43-ID09-DIFG v2">0585e23847b18290a3c34e98436d4355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:16:09</sys_created_on>
+<sys_id>0585e23847b18290a3c34e98436d4356</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18df7ea49dc0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:16:09</sys_updated_on>
+<table>sn_customerservice_case</table>
+<target_name>Propose Solution</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>4e22bf354e4f3150b0c70e5e5fdf0a82</update_guid>
+<update_guid_history>4e22bf354e4f3150b0c70e5e5fdf0a82:325072995,1168e031ab0ffd10888f86e8c141f24d:773567882,3c286c71920ffd10942374ccc5c6c3de:2098982746,30286c71260ffd10ad9048ce7dfa08dd:773567882</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>retrieved</category>
+<comments/>
+<name>sn_customerservice_sf_case_8a03fb75974f3150655570700153afdc</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sn_customerservice_sf_case"&gt;&lt;sn_customerservice_sf_case action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;automatic_condition/&gt;&lt;automatic_roles/&gt;&lt;automatic_script/&gt;&lt;automatic_string/&gt;&lt;business_rule/&gt;&lt;change_client_script/&gt;&lt;client_script/&gt;&lt;comment&gt;Customer Service Case Flow para mostrar mensaje si aun hay tareas abiertas&lt;/comment&gt;&lt;end_text&gt;6&lt;/end_text&gt;&lt;ending_state display_value="Resolved"&gt;a65c4c90c3a23100d6d210c422d3ae16&lt;/ending_state&gt;&lt;event/&gt;&lt;event_rule/&gt;&lt;mandatory_fields/&gt;&lt;manual_condition/&gt;&lt;manual_roles/&gt;&lt;manual_script&gt;&lt;![CDATA[var gr = new GlideRecord('sn_customerservice_task');
+gr.addQuery('parent_case', current.sys_id);
+gr.query();
+while (gr.next()) {
+    if (gr.state != '3') {
+        gs.addErrorMessage(gs.getMessage("The case cannot be solved because have open tasks"));
+        action.openGlideRecord(current);
+        current.setAbortAction(true);
+    }
+}
+
+if (current.close_notes.nil()) {
+    gs.addErrorMessage(gs.getMessage("Please specify solution in close notes"));
+    action.openGlideRecord(current);
+    current.setAbortAction(true);
+}]]&gt;&lt;/manual_script&gt;&lt;manual_string&gt;gs.hasRole('sn_esm_agent') || gs.hasRole('sn_csm_ocs.ext_agent') || gs.hasRole('sn_esm_location_agent') || gs.hasRole('sn_customerservice.relationship_agent')&lt;/manual_string&gt;&lt;name&gt;Propose Solution&lt;/name&gt;&lt;not_mandatory/&gt;&lt;not_read_only/&gt;&lt;not_visible/&gt;&lt;number&gt;SF0010001&lt;/number&gt;&lt;override/&gt;&lt;read_only_fields/&gt;&lt;roles/&gt;&lt;start_text&gt;10&lt;/start_text&gt;&lt;starting_state display_value="Open"&gt;265c4c90c3a23100d6d210c422d3ae16&lt;/starting_state&gt;&lt;sys_class_name&gt;sn_customerservice_sf_case&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-12 15:36:05&lt;/sys_created_on&gt;&lt;sys_id&gt;8a03fb75974f3150655570700153afdc&lt;/sys_id&gt;&lt;sys_mod_count&gt;16&lt;/sys_mod_count&gt;&lt;sys_name&gt;Propose Solution&lt;/sys_name&gt;&lt;sys_package display_value="Customer Service" source="sn_customerservice"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Customer Service"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_customerservice_sf_case_8a03fb75974f3150655570700153afdc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-12 17:05:21&lt;/sys_updated_on&gt;&lt;table&gt;sn_customerservice_case&lt;/table&gt;&lt;translated_ending_state/&gt;&lt;translated_starting_state/&gt;&lt;ui_action display_value="Propose Solution"&gt;91c6bb3d974f3150655570700153afff&lt;/ui_action&gt;&lt;visible_fields/&gt;&lt;work_notes/&gt;&lt;work_notes_rule/&gt;&lt;/sn_customerservice_sf_case&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1206941342</payload_hash>
+<remote_update_set display_value="DVT-SP4-Issue EP43-ID09-DIFG v2">0585e23847b18290a3c34e98436d4355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:16:09</sys_created_on>
+<sys_id>0985e23847b18290a3c34e98436d4355</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18df7ea4a070000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:16:09</sys_updated_on>
+<table>sn_customerservice_case</table>
+<target_name>Propose Solution</target_name>
+<type>Customer Service Case Flow</type>
+<update_domain>global</update_domain>
+<update_guid>757744c60ecf31501c1c4c366192de54</update_guid>
+<update_guid_history>757744c60ecf31501c1c4c366192de54:1206941342,41374c86aacf315022c371e6338dcac7:-468024585,82150c82c7cf3150c7cef3f880850ccb:1282151438,4624844297cf3150286eb77ead5224d2:-305246074,feb34002f6cf31509d15672569fc28ab:1482837804,a753cc8e668f31500edb71a4d2aaf234:-139553759,07d2008e968f315016a9ccfe92b8a3dd:-468777427,ea62444ecc8f31508d84749ec0c3933c:2107983335,d701448a418f31500ae8578918368a51:-264178231,9d3c3b352f8f3150e798111750401833:824178314,44cb7bf1e08f3150e05c4d486695e02a:-357869613,b68b73f1e88f31503fd5b13decd1b5ad:-1051960370,54fa77b1bd8f31504aa428e58488e2a9:415563615,11c6fb3d5c4f31502d399e75fff37303:1730153134,130677f9ff4f3150b4b8b29e8c4255ad:960473146,130677f9ff4f3150b4b8b29e8c4255ad:960473146,8c43f7b5cd4f31506fa1cf0aad3e3ca8:1746792378,d20373f5bc4f315043b42746514e9574:406609421</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_ui_action_5a03fb75974f3150655570700153afdd</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="DELETE"&gt;&lt;action_name&gt;proposeSolution&lt;/action_name&gt;&lt;active&gt;false&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;current.state==10 &amp;amp;&amp;amp; (new global.StateFlow().validFlow(current, '8a03fb75974f3150655570700153afdc', 'manual'));&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Propose Solution&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[new global.StateFlow().processFlow(current, '8a03fb75974f3150655570700153afdc', 'manual');]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-12 15:36:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;5a03fb75974f3150655570700153afdd&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Propose Solution&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Customer Service" source="sn_customerservice"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Customer Service"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_5a03fb75974f3150655570700153afdd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-12 15:39:37&lt;/sys_updated_on&gt;&lt;table&gt;sn_customerservice_case&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1134547466</payload_hash>
+<remote_update_set display_value="DVT-SP4-Issue EP43-ID09-DIFG v2">0585e23847b18290a3c34e98436d4355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:16:09</sys_created_on>
+<sys_id>4185e23847b18290a3c34e98436d4356</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18df7ea49e30000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:16:09</sys_updated_on>
+<table>sn_customerservice_case</table>
+<target_name>Propose Solution</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>0556bff9364f3150fc9a8bff43542078</update_guid>
+<update_guid_history>0556bff9364f3150fc9a8bff43542078:-1134547466,06d3f339774f315044bc8e11c14bd3bf:2092857858,9a03fb756e4f3150227b249ebf37d9de:105200555</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_ui_message_9ea4048297cf3150655570700153af11</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application/><code/><commented_message/><key>The case cannot be solved because have open tasks</key><language>en</language><message>The case cannot be solved because have open tasks</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2023-12-12 16:54:14</sys_created_on><sys_id>9ea4048297cf3150655570700153af11</sys_id><sys_mod_count>0</sys_mod_count><sys_name>The case cannot be solved because have open tasks</sys_name><sys_package display_value="Customer Service" source="sn_customerservice">51d811fad7223100b7490ee60e61034f</sys_package><sys_policy/><sys_scope display_value="Customer Service">51d811fad7223100b7490ee60e61034f</sys_scope><sys_update_name>sys_ui_message_9ea4048297cf3150655570700153af11</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2023-12-12 16:54:14</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>-1596772289</payload_hash>
+<remote_update_set display_value="DVT-SP4-Issue EP43-ID09-DIFG v2">0585e23847b18290a3c34e98436d4355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:16:09</sys_created_on>
+<sys_id>4d85e23847b18290a3c34e98436d4356</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18df7ea49ea0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:16:09</sys_updated_on>
+<table/>
+<target_name>The case cannot be solved because have open tasks</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid>4be4c84275cf315023855201cb6429ac</update_guid>
+<update_guid_history>4be4c84275cf315023855201cb6429ac:-1596772289</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_ui_message_10f4488297cf3150655570700153afbc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message"><sys_ui_message action="INSERT_OR_UPDATE"><application/><code/><commented_message/><key>The case cannot be solved because have open tasks</key><language>es</language><message>El caso no puede resolverse porque tiene tareas abiertas.</message><sys_class_name>sys_ui_message</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2023-12-12 16:54:40</sys_created_on><sys_id>10f4488297cf3150655570700153afbc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>The case cannot be solved because have open tasks</sys_name><sys_package display_value="Customer Service" source="sn_customerservice">51d811fad7223100b7490ee60e61034f</sys_package><sys_policy/><sys_scope display_value="Customer Service">51d811fad7223100b7490ee60e61034f</sys_scope><sys_update_name>sys_ui_message_10f4488297cf3150655570700153afbc</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2023-12-12 16:54:40</sys_updated_on></sys_ui_message></record_update>]]></payload>
+<payload_hash>2067866877</payload_hash>
+<remote_update_set display_value="DVT-SP4-Issue EP43-ID09-DIFG v2">0585e23847b18290a3c34e98436d4355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:16:09</sys_created_on>
+<sys_id>8985e23847b18290a3c34e98436d4356</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18df7ea49f00000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:16:09</sys_updated_on>
+<table/>
+<target_name>The case cannot be solved because have open tasks</target_name>
+<type>Message</type>
+<update_domain>global</update_domain>
+<update_guid>d9054882a9cf31505b58ede9c2a65dc2</update_guid>
+<update_guid_history>d9054882a9cf31505b58ede9c2a65dc2:2067866877</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_ui_action_58027375974f3150655570700153af7b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="DELETE"&gt;&lt;action_name&gt;proposeSolution&lt;/action_name&gt;&lt;active&gt;false&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+	
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments&gt;NO&lt;/comments&gt;&lt;condition&gt;(new global.CSManagementUtils().isProposeSolnUIActionValid()) &amp;amp;&amp;amp; current.state==10 &amp;amp;&amp;amp; (new global.StateFlow().validFlow(current, '8a03fb75974f3150655570700153afdc', 'manual'));&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;true&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;true&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Propose Solution DEVOTEAM&lt;/name&gt;&lt;onclick&gt;runClientCode()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[new global.StateFlow().processFlow(current, '8a03fb75974f3150655570700153afdc', 'manual');]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-12 15:31:36&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;58027375974f3150655570700153af7b&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Propose Solution DEVOTEAM&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Customer Service" source="sn_customerservice"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Customer Service"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_58027375974f3150655570700153af7b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-12 16:11:49&lt;/sys_updated_on&gt;&lt;table&gt;sn_customerservice_case&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-143614642</payload_hash>
+<remote_update_set display_value="DVT-SP4-Issue EP43-ID09-DIFG v2">0585e23847b18290a3c34e98436d4355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:16:09</sys_created_on>
+<sys_id>8d85e23847b18290a3c34e98436d4355</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18df7ea49f60000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:16:09</sys_updated_on>
+<table>sn_customerservice_case</table>
+<target_name>Propose Solution DEVOTEAM</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>d9d5440601cf315050997cc512f3a7a5</update_guid>
+<update_guid_history>d9d5440601cf315050997cc512f3a7a5:-143614642,e13bfbb1058f31505d82e420dbb78653:1136091074,2aa6333d834f3150c4a563edd9c8c1a3:-998932227,79333f75b04f3150e1444bb2383145bd:1041943673,8a827375c34f31509d4d220c3086e5ab:582300605,2402fb75f44f315077765fe368256708:773567882</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_ux_form_action_fb16804697cf3150655570700153afc7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action"><sys_ux_form_action action="INSERT_OR_UPDATE"><action_type>ui_action</action_type><active>true</active><declarative_action/><description/><name>Propose Solution</name><specificity>20</specificity><sys_class_name>sys_ux_form_action</sys_class_name><sys_created_by>DevDevoteam4</sys_created_by><sys_created_on>2023-12-12 16:59:29</sys_created_on><sys_id>fb16804697cf3150655570700153afc7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Propose Solution</sys_name><sys_package display_value="Customer Service" source="sn_customerservice">51d811fad7223100b7490ee60e61034f</sys_package><sys_policy/><sys_scope display_value="Customer Service">51d811fad7223100b7490ee60e61034f</sys_scope><sys_update_name>sys_ux_form_action_fb16804697cf3150655570700153afc7</sys_update_name><sys_updated_by>DevDevoteam4</sys_updated_by><sys_updated_on>2023-12-12 16:59:29</sys_updated_on><table>sn_customerservice_case</table><ui_action display_value="Propose Solution">91c6bb3d974f3150655570700153afff</ui_action></sys_ux_form_action></record_update>]]></payload>
+<payload_hash>1673749211</payload_hash>
+<remote_update_set display_value="DVT-SP4-Issue EP43-ID09-DIFG v2">0585e23847b18290a3c34e98436d4355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:16:09</sys_created_on>
+<sys_id>c185e23847b18290a3c34e98436d4357</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18df7ea49fc0000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:16:09</sys_updated_on>
+<table>sn_customerservice_case</table>
+<target_name>Propose Solution</target_name>
+<type>UX Form Actions</type>
+<update_domain>global</update_domain>
+<update_guid>3b168046c6cf31505243981de2b918c9</update_guid>
+<update_guid_history>3b168046c6cf31505243981de2b918c9:1673749211</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_ui_action_91c6bb3d974f3150655570700153afff</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;proposeSolutionDevoteam&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;current.state==10 &amp;amp;&amp;amp; (new global.StateFlow().validFlow(current, '8a03fb75974f3150655570700153afdc', 'manual'));&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;true&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;true&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Propose Solution&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[new global.StateFlow().processFlow(current, '8a03fb75974f3150655570700153afdc', 'manual');]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam4&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-12 15:52:25&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;91c6bb3d974f3150655570700153afff&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Propose Solution&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Customer Service" source="sn_customerservice"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Customer Service"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_91c6bb3d974f3150655570700153afff&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-12 16:59:29&lt;/sys_updated_on&gt;&lt;table&gt;sn_customerservice_case&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1339039822</payload_hash>
+<remote_update_set display_value="DVT-SP4-Issue EP43-ID09-DIFG v2">0585e23847b18290a3c34e98436d4355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:16:09</sys_created_on>
+<sys_id>c585e23847b18290a3c34e98436d4356</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18df7ea4a010000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:16:09</sys_updated_on>
+<table>sn_customerservice_case</table>
+<target_name>Propose Solution</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>bb16804657cf31502a16722ddc0c61cc</update_guid>
+<update_guid_history>bb16804657cf31502a16722ddc0c61cc:-1339039822,e713888ef38f31502383ec2fd0214325:-859456966,d5c6fb3dc14f3150659f7c9a6c543000:213547784</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Customer Service">51d811fad7223100b7490ee60e61034f</application>
+<category>retrieved</category>
+<comments/>
+<name>sys_script_client_b85c8b3f9751b550655570700153afad</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;DVT-validarEstadoTareas&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+    var caseSys_id = g_form.getUniqueValue();
+    var ga = new GlideAjax('global.DVT_validarEstadoTareasCasos');
+    ga.addParam('sysparm_name', 'getStateTask');
+    ga.addParam('case', caseSys_id);
+    ga.getXMLAnswer(getResponse);
+
+    function getResponse(response) {
+        var res = response;
+        //var uiActionElement = document.getElementById('proposeSolution');
+
+        if (res == 'false') {
+            g_form.removeOption('state', '6');
+            /* if (uiActionElement) {
+                uiActionElement.style.display = "none"; //or "block" to show
+            }
+			*/
+        } else {
+            enableOption('state', '6');
+        }
+
+    }
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;DevDevoteam6&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-22 18:14:23&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;b85c8b3f9751b550655570700153afad&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;DVT-validarEstadoTareas&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Customer Service" source="sn_customerservice"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Customer Service"&gt;51d811fad7223100b7490ee60e61034f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_b85c8b3f9751b550655570700153afad&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;DevDevoteam4&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-12 00:44:41&lt;/sys_updated_on&gt;&lt;table&gt;sn_customerservice_case&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-697169873</payload_hash>
+<remote_update_set display_value="DVT-SP4-Issue EP43-ID09-DIFG v2">0585e23847b18290a3c34e98436d4355</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>02494547</sys_created_by>
+<sys_created_on>2024-04-24 00:16:09</sys_created_on>
+<sys_id>c985e23847b18290a3c34e98436d4355</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18df7ea49c30000001</sys_recorded_at>
+<sys_updated_by>02494547</sys_updated_by>
+<sys_updated_on>2024-04-24 00:16:09</sys_updated_on>
+<table>sn_customerservice_case</table>
+<target_name>DVT-validarEstadoTareas</target_name>
+<type>Client Script</type>
+<update_domain>global</update_domain>
+<update_guid>60076071800ffd10d35dc9fd3f1d6b7e</update_guid>
+<update_guid_history>60076071800ffd10d35dc9fd3f1d6b7e:-697169873,9cbb4f65d5833d102fc5f30bb9cbba93:-1709891704,00ea4365a2833d1037ea70692cf8f072:-842657696,546a4f25dd833d1048b7aacfeaa011d9:1957451816,af584f6118833d10f94542cd691b3d43:1146193887,0eb60bedc4433d1067f84f6b4c66ce49:522097043,4ca54b6dab433d102fa6765a9129a35d:-108544222,6575c76d82433d100dd3e85689d1ee2d:1471397442,13650b2d35433d106baafde7089bf714:-1026124140,66258f2d97433d1070ff3b71396d3f20:127277571,e7f4032dcf433d10bef5228dfc9ba17e:676645625,5da44fe941433d1051ac91da92d292bd:-842657696,b37307a9ea433d102fca39999aac5223:676645625,4733c36960433d10cfc4e0ade8b08de6:-1124238503,fcd28b29f5433d1020841761383ed313:1415008235,587207e5fe433d1052f2e00e5c377ff3:-978242525,008d3febcbb9b510ee31d67844a873ac:-842657696,da7cf36b72b9b5103196b5051f7cfe24:-1057132262,0a9bf32b0cb9b510ce04ef6b78d9278e:-1429385218,137a33a721b9b510da3fd8d7c35f9b5b:-630911230,8e1a77276fb9b510fb8a27c5c4b411e7:-386970558,65965bfbac91b550e01ce1d03f749d82:702489116,a2051b7b9191b550faeceb4a4923e753:-1758814157,c0d4937bab91b5509a430b0681e0de09:-2050567886,c094df3b9b91b5501b18383b913f5cb6:-968996074,6274533b3791b550e1c654598584ec42:-1660322256,33ff4733a691b5505591b796b1a41d3c:-126180333,d6ae0fff5451b5508778aa5eab51ec22:634373569,577e03737a91b5508f2626d9065c50dd:2001361173</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
